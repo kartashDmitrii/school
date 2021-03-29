@@ -1,0 +1,28 @@
+html
+  overflow-x: hidden
+body
+  min-height: 100vh
+  display: flex
+  font-family: Montserrat
+  flex-direction: column
+  position: relative
+  overflow-x: hidden
+  color: #282828
+  &.hidden
+    max-height: 100vh
+    overflow: hidden
+  *
+    -webkit-tap-highlight-color: transparent
+  main
+    flex: 1
+img
+  width: 100%
+  height: auto
+
+.container.flex-container
+  display: flex
+  .filter
+    width: 395px
+    margin-right: 30px
+  .small-container
+    width: calc(100% - 425px)

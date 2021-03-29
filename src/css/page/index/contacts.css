@@ -1,0 +1,66 @@
+section.contacts {
+  position: relative;
+  margin-bottom: 65px; }
+  section.contacts .dots-canvas {
+    position: absolute;
+    left: -27px;
+    top: -16px; }
+  section.contacts .container {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: calc(50% - 87.5px) calc(50% - 87.5px);
+    grid-column-gap: 175px; }
+    section.contacts .container .text {
+      display: flex;
+      flex-direction: column; }
+      section.contacts .container .text .title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 43px;
+        color: #1b1b1b;
+        margin: 0 0 64px; }
+      section.contacts .container .text .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 130px;
+        grid-row-gap: 24px; }
+        section.contacts .container .text .grid .elem {
+          display: flex;
+          flex-direction: column; }
+          section.contacts .container .text .grid .elem .text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1b1b1b;
+            margin: 0 0 12px; }
+          section.contacts .container .text .grid .elem .desc {
+            display: flex;
+            flex-direction: column; }
+            section.contacts .container .text .grid .elem .desc p {
+              font-size: 18px;
+              line-height: 22px;
+              color: #1b1b1b;
+              margin: 0 0 15px; }
+              section.contacts .container .text .grid .elem .desc p:last-child {
+                margin-bottom: 0; }
+            section.contacts .container .text .grid .elem .desc .phone-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-auto-rows: auto;
+              grid-column-gap: 35px;
+              grid-row-gap: 5px; }
+              section.contacts .container .text .grid .elem .desc .phone-grid a {
+                font-size: 18px;
+                line-height: 22px;
+                text-decoration: none;
+                color: #1b1b1b; }
+    section.contacts .container .map {
+      position: relative;
+      height: 100%; }
+      section.contacts .container .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(50vw - 87.5px);
+        height: 100%; }

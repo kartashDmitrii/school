@@ -1,0 +1,196 @@
+header
+  margin-top: 35px
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 65px 10px
+    background: #FFC919
+    box-sizing: border-box
+    border-radius: 60px
+    margin-bottom: 45px
+    .logo
+      width: 228px
+      height: 71px
+    .content
+      display: flex
+      width: calc(100% - 285px)
+      flex-direction: column
+      .top
+        display: flex
+        align-items: center
+        margin-bottom: 17px
+        .phones
+          position: relative
+          margin-right: 60px
+          .main-phone
+            display: flex
+            align-items: center
+            position: relative
+            a
+              font-size: 16px
+              line-height: 140%
+              text-transform: uppercase
+              text-decoration: none
+              color: #181818
+              padding-right: 23px
+            span
+              position: absolute
+              right: 0
+              top: 0
+              bottom: 0
+              margin: auto
+              cursor: pointer
+              width: 16px
+              height: 16px
+              background: url("../img/svg/arrow-down.svg") center center / 100% 100% no-repeat
+          ul
+            padding: 0 10px
+            margin: 0
+            list-style: none
+            display: flex
+            flex-direction: column
+            height: 0
+            overflow: hidden
+            transition: height .3s, padding .3s
+            position: absolute
+            left: -10px
+            width: max-content
+            top: 100%
+            background: #FFC919
+            &.active
+              padding: 10px
+            li
+              font-size: 16px
+              line-height: 140%
+              text-transform: uppercase
+              text-decoration: none
+              color: #181818
+              margin-bottom: 5px
+              a
+                color: inherit
+                text-decoration: inherit
+              &:last-child
+                margin-bottom: 0
+        .search
+          flex: 1
+          margin-right: 75px
+          max-width: 600px
+          display: flex
+          align-items: center
+          position: relative
+          label
+            width: 100%
+            display: flex
+            input
+              width: 100%
+              background: transparent
+              padding: 10px 0
+              box-sizing: border-box
+              border: solid #434343
+              border-width: 0 0 1px 0
+              font-weight: 500
+              font-size: 16px
+              line-height: 140%
+              color: #434343
+              outline: none
+          a
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            margin: auto
+            width: 23px
+            height: 23px
+            background: url("../img/svg/search.svg") center center / 100% 100% no-repeat
+        .langs
+          display: flex
+          align-items: center
+          font-size: 16px
+          line-height: 140%
+          color: #181818
+          a
+            color: inherit
+            text-decoration: inherit
+            margin-right: 25px
+            position: relative
+            &:after
+              content: ''
+              width: 1px
+              height: 100%
+              position: absolute
+              right: -12px
+              top: 0
+              bottom: 0
+              margin: auto
+              background: #181818
+            &:last-child
+              margin-right: 0
+              &:after
+                content: none
+            &.active
+              color: #434343
+      .bottom
+        display: flex
+        align-items: center
+        nav
+          flex: 1
+          display: flex
+          justify-content: space-between
+          margin-left: 75px
+          margin-right: 120px
+          ul
+            width: 100%
+            justify-content: space-between
+            display: flex
+            align-items: center
+            padding: 0
+            margin: 0
+            list-style: none
+            li
+              font-size: 18px
+              line-height: 22px
+              color: #181818
+              a
+                color: inherit
+                text-decoration: inherit
+        .user-menu
+          display: flex
+          align-items: center
+          .user
+            position: relative
+            margin-right: 28px
+            background: url("../img/svg/user.svg") center center / 100% 100% no-repeat
+            width: 27px
+            height: 27px
+          .favorite
+            margin-right: 28px
+            width: 30px
+            height: 30px
+            background: url("../img/svg/favorite.svg") center center / 100% 100%
+            position: relative
+            span
+              position: absolute
+              left: 31px
+              top: -13px
+              font-weight: 500
+              font-size: 12px
+              line-height: 140%
+              text-transform: uppercase
+              text-align: center
+              color: #434343
+          .cart
+            position: relative
+            width: 31px
+            height: 27px
+            background: url("../img/svg/cart.svg") center center / 100% 100% no-repeat
+            span
+              position: absolute
+              left: 31px
+              top: -13px
+              font-weight: 500
+              font-size: 12px
+              line-height: 140%
+              text-transform: uppercase
+              text-align: center
+              color: #434343

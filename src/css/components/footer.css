@@ -1,0 +1,73 @@
+footer {
+  background: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px;
+  padding-bottom: 15px; }
+  footer > a {
+    margin: 0 auto;
+    width: max-content;
+    font-size: 12px;
+    line-height: 170%;
+    color: #1b1b1b;
+    padding-right: 42px;
+    position: relative;
+    text-decoration: none; }
+    footer > a:after {
+      content: '';
+      width: 33px;
+      height: 19px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: url("../img/svg/space.svg") center center/100% 100% no-repeat; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 53px; }
+    footer .container .logo {
+      width: 423px;
+      height: 132px;
+      margin-right: 115px; }
+    footer .container .menu {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 35px; }
+      footer .container .menu li {
+        display: flex;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b; }
+        footer .container .menu li a {
+          width: max-content;
+          text-decoration: inherit;
+          color: inherit; }
+    footer .container .social {
+      margin-left: 195px;
+      display: flex;
+      flex-direction: column; }
+      footer .container .social p {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #1b1b1b;
+        margin: 0 0 25px; }
+      footer .container .social .links {
+        display: flex;
+        align-items: center; }
+        footer .container .social .links a {
+          width: 27px;
+          height: 27px;
+          margin-right: 30px; }
+          footer .container .social .links a.telegram {
+            background: url("../img/svg/telegram.svg") center center/100% 100% no-repeat; }
+          footer .container .social .links a.instagram {
+            background: url("../img/svg/instagram.svg") center center/100% 100% no-repeat; }
+          footer .container .social .links a.facebook {
+            background: url("../img/svg/facebook.svg") center center/100% 100% no-repeat; }
+          footer .container .social .links a:last-child {
+            margin-right: 30px; }

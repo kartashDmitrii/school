@@ -1,0 +1,56 @@
+section.product-slider
+  margin-bottom: 60px
+  .title
+    display: block
+    font-weight: 500
+    font-size: 35px
+    line-height: 43px
+    color: #1b1b1b
+    margin: 0 0 55px
+  .slider
+    position: relative
+    .swiper-container
+      padding: 10px
+  .pagination
+    margin-top: 35px
+    display: flex
+    justify-content: center
+    .swiper-pagination-bullet
+      width: 75px
+      height: 3px
+      background: #bec9ce
+      border-radius: 0
+      margin-right: 20px
+      outline: none
+      &:last-child
+        margin-right: 0
+      &.swiper-pagination-bullet-active
+        background: #917898
+  .arrows
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    height: max-content
+    width: 100%
+    user-select: none
+    pointer-events: none
+    display: flex
+    justify-content: space-between
+    .arrow
+      user-select: auto
+      pointer-events: auto
+      width: 20px
+      height: 20px
+      position: relative
+      cursor: pointer
+      background: url("../img/svg/arrow-down.svg") center center / 100% 100% no-repeat
+      outline: none
+      &.next
+        transform: rotate(-90deg)
+        right: -55px
+      &.prev
+        transform: rotate(90deg)
+        left: -55px

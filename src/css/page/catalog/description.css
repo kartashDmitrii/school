@@ -1,0 +1,21 @@
+section.description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px; }
+  section.description .title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #1b1b1b;
+    margin: 0 0 15px; }
+  section.description .desc {
+    display: flex;
+    flex-direction: column; }
+    section.description .desc > * {
+      margin: 0 0 5px; }
+      section.description .desc > *:last-child {
+        margin-bottom: 0; }
+    section.description .desc p {
+      font-size: 16px;
+      line-height: 23px;
+      color: #1b1b1b; }

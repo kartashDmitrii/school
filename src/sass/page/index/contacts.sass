@@ -1,0 +1,66 @@
+section.contacts
+  position: relative
+  margin-bottom: 65px
+  .dots-canvas
+    position: absolute
+    left: -27px
+    top: -16px
+  .container
+    display: grid
+    align-items: flex-start
+    grid-template-columns: calc(50% - 87.5px) calc(50% - 87.5px)
+    grid-column-gap: 175px
+    .text
+      display: flex
+      flex-direction: column
+      .title
+        font-weight: 500
+        font-size: 35px
+        line-height: 43px
+        color: #1b1b1b
+        margin: 0 0 64px
+      .grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-auto-rows: auto
+        grid-column-gap: 130px
+        grid-row-gap: 24px
+        .elem
+          display: flex
+          flex-direction: column
+          .text
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            color: #1b1b1b
+            margin: 0 0 12px
+          .desc
+            display: flex
+            flex-direction: column
+            p
+              font-size: 18px
+              line-height: 22px
+              color: #1b1b1b
+              margin: 0 0 15px
+              &:last-child
+                margin-bottom: 0
+            .phone-grid
+              display: grid
+              grid-template-columns: 1fr 1fr
+              grid-auto-rows: auto
+              grid-column-gap: 35px
+              grid-row-gap: 5px
+              a
+                font-size: 18px
+                line-height: 22px
+                text-decoration: none
+                color: #1b1b1b
+    .map
+      position: relative
+      height: 100%
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: calc(50vw - 87.5px)
+        height: 100%

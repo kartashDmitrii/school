@@ -1,0 +1,118 @@
+section.filter {
+  display: flex;
+  flex-direction: column; }
+  section.filter .filter-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #1B1B1B;
+    border-radius: 10px;
+    margin-bottom: 32px; }
+    section.filter .filter-list:last-child {
+      margin-bottom: 0; }
+    section.filter .filter-list > p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1b1b1b;
+      margin: 0 0 20px; }
+    section.filter .filter-list ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      section.filter .filter-list ul li {
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column; }
+        section.filter .filter-list ul li:last-child {
+          margin-bottom: 0; }
+        section.filter .filter-list ul li > span {
+          width: 100%;
+          padding: 5px 20px;
+          box-sizing: border-box;
+          position: relative;
+          display: block; }
+          section.filter .filter-list ul li > span:hover {
+            background: rgba(255, 201, 25, 0.6); }
+        section.filter .filter-list ul li a {
+          color: inherit;
+          text-decoration: inherit; }
+        section.filter .filter-list ul li > a {
+          width: 100%; }
+          section.filter .filter-list ul li > a:hover {
+            background: rgba(255, 201, 25, 0.6); }
+    section.filter .filter-list.hidden > p {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 0;
+      transition: margin .3s; }
+      section.filter .filter-list.hidden > p.active {
+        margin-bottom: 20px; }
+        section.filter .filter-list.hidden > p.active:after {
+          transform: rotate(0deg); }
+      section.filter .filter-list.hidden > p:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: url("../img/svg/arrow-down.svg") center center/100% 100% no-repeat;
+        transform: rotate(180deg);
+        transition: transform .3s; }
+    section.filter .filter-list.hidden > ul {
+      overflow: hidden;
+      height: 0;
+      transition: height .3s; }
+  section.filter .catalog {
+    padding: 10px 0; }
+    section.filter .catalog > p {
+      font-size: 20px;
+      line-height: 24px;
+      position: relative;
+      border-bottom: 1px solid #000;
+      padding: 10px 10px 12px 46px; }
+      section.filter .catalog > p:before {
+        content: '';
+        width: 18px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 20px;
+        background: url("../img/svg/burger.svg") center center/100% 100% no-repeat; }
+    section.filter .catalog ul li {
+      font-weight: 500; }
+      section.filter .catalog ul li.has-child > span:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+        background: url("../img/svg/arrow-down.svg") center center/100% 100% no-repeat;
+        transition: transform .3s; }
+      section.filter .catalog ul li.has-child > span.active:after {
+        transform: rotate(180deg); }
+      section.filter .catalog ul li.has-child > ul {
+        height: 0;
+        overflow: hidden;
+        transition: all .3s; }
+        section.filter .catalog ul li.has-child > ul li {
+          font-weight: 400; }
+        section.filter .catalog ul li.has-child > ul.active {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #000;
+          margin-bottom: 25px; }
