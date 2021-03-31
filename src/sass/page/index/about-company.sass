@@ -1,16 +1,6 @@
 section.about-company
   position: relative
-  margin-bottom: 75px
-  &:after
-    content: ''
-    width: 170px
-    height: 145px
-    position: absolute
-    top: 355px
-    left: 628px
-    background: url("../img/svg/figure.svg") center center / 100% 100% no-repeat
-    transform: rotate(180deg)
-    z-index: -1
+  margin-bottom: 155px
   .container
     position: static
     display: grid
@@ -20,6 +10,16 @@ section.about-company
     grid-gap: 90px
     .image
       height: 430px
+      &:after
+        content: ''
+        width: 170px
+        height: 145px
+        position: absolute
+        top: 355px
+        left: 628px
+        background: url("../img/svg/figure.svg") center center / 100% 100% no-repeat
+        transform: rotate(180deg)
+        z-index: -1
       img
         position: absolute
         width: 975px
@@ -28,6 +28,14 @@ section.about-company
         left: 0
         border-radius: 0 500px 500px 0
         z-index: 1
+      &.reverse
+        &:after
+          left: auto
+          right: 775px
+        img
+          left: auto
+          right: 0
+          transform: matrix(-1, 0, 0, 1, 0, 0)
     .text
       display: flex
       flex-direction: column
@@ -55,3 +63,6 @@ section.about-company
     top: 377px
     left: 314px
     z-index: -1
+    &.reverse
+      left: auto
+      right: 455px

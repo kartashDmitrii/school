@@ -134,20 +134,24 @@
     <div class="filter-list price">
         <p>Цена (грн)</p>
         <div class="price-inputs">
-            <label>
+            <label class="from">
                 <input type="number" name="min">
             </label>
             <span>-</span>
-            <label>
+            <label class="to">
                 <input type="number" name="max">
             </label>
             <input type="submit" value="Ок">
         </div>
-        <div class="range"></div>
-        <label>
+        <div class="range">
+            <label>
+                <input type="text" class="range-slider" data-min="0" data-max="1000" data-from="80" data-to="850">
+            </label>
+        </div>
+        <label class="checkbox-label">
             <span class="text">Есть на складе <span>(44)</span></span>
             <input type="checkbox" checked>
-            <span></span>
+            <span class="check"></span>
         </label>
     </div>
     <div class="filter-list hidden" data-hide>
@@ -157,35 +161,35 @@
                 <label>
                     <span class="text">0-4 года<span>(11)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">5-7 лет<span>(3)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">8-13 лет<span>(4)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">14+лет<span>(14)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">Не указано<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
         </ul>
@@ -197,56 +201,56 @@
                 <label>
                     <span class="text">4BNB<span>(11)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">Artec<span>(3)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">EasyScience<span>(4)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">Granna<span>(14)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
         </ul>
@@ -258,56 +262,56 @@
                 <label>
                     <span class="text">абстрактное мышление<span>(11)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">анатомия<span>(3)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">астрономия<span>(4)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">биология<span>(14)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">инженерия<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">All 4 Kids<span>(1)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
         </ul>
@@ -319,14 +323,14 @@
                 <label>
                     <span class="text">Акции<span>(11)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
             <li>
                 <label>
                     <span class="text">Бестселлеры<span>(3)</span></span>
                     <input type="checkbox">
-                    <span></span>
+                    <span class="check"></span>
                 </label>
             </li>
         </ul>

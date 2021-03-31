@@ -11,9 +11,9 @@ export default class DotsCanvas {
         this.importElem.appendChild(this.canvas);
         this.ctx = this.canvas.getContext('2d');
         this.ctx.fillStyle = 'rgb(255, 201, 25)';
-        for (let i = 5.5; i < this.width; i += 32){
-            for (let j = 5.5; j < this.height; j += 32){
-                this.drawDot(i, j, 5.5);
+        for (let i = 5; i < this.width; i += 30){
+            for (let j = 5; j < this.height; j += 30){
+                this.drawDot(i, j, 5);
             }
         }
     }

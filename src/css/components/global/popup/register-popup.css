@@ -1,0 +1,206 @@
+.popup.register-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 55px; }
+  .popup.register-popup > .text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #1b1b1b;
+    margin: 0 0 55px; }
+  .popup.register-popup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .popup.register-popup form .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; }
+      .popup.register-popup form .row label {
+        width: 500px;
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #949494; }
+        .popup.register-popup form .row label input {
+          margin-top: 5px;
+          width: 100%;
+          border: 1px solid #565656;
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #949494;
+          padding: 18px 22px;
+          outline: none; }
+        .popup.register-popup form .row label:last-child {
+          margin-right: 0; }
+    .popup.register-popup form input[type="submit"] {
+      max-width: 500px;
+      width: 100%;
+      background: #917898;
+      border-radius: 100px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #ffffff;
+      margin: 0 0 48px;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      cursor: pointer; }
+    .popup.register-popup form label.confirm {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding: 2px 0 2px 30px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 17px;
+      user-select: none;
+      box-sizing: border-box;
+      margin-bottom: 50px; }
+      .popup.register-popup form label.confirm input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+        .popup.register-popup form label.confirm input:checked ~ span:after {
+          content: ''; }
+      .popup.register-popup form label.confirm .check {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        height: 18px;
+        width: 18px;
+        border: 1px solid #565656;
+        border-radius: 4px; }
+        .popup.register-popup form label.confirm .check:after {
+          content: none;
+          width: 12px;
+          height: 5px;
+          position: absolute;
+          top: -3px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          border: solid #f90;
+          border-width: 0 0 2px 2px;
+          transform: rotate(-45deg); }
+  .popup.register-popup .hr {
+    display: block;
+    width: max-content;
+    background: #ffffff;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1b1b1b;
+    position: relative;
+    margin-bottom: 32px; }
+    .popup.register-popup .hr:before {
+      content: '';
+      width: 500px;
+      height: 1px;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -250px;
+      right: -250px;
+      margin: auto;
+      background: #808080; }
+  .popup.register-popup .ref-links {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 30px; }
+    .popup.register-popup .ref-links .google {
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1b1b1b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      margin-bottom: 32px; }
+      .popup.register-popup .ref-links .google span {
+        padding: 15px 0 15px 40px;
+        position: relative; }
+        .popup.register-popup .ref-links .google span:before {
+          content: '';
+          width: 21px;
+          height: 21px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: url("../img/google-logo.png") center center/100% 100% no-repeat; }
+    .popup.register-popup .ref-links .facebook {
+      width: 100%;
+      background: #0063bf;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      margin-bottom: 32px; }
+      .popup.register-popup .ref-links .facebook span {
+        padding: 15px 0 15px 32px;
+        position: relative; }
+        .popup.register-popup .ref-links .facebook span:before {
+          content: '';
+          width: 13.5px;
+          height: 25.75px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: url("../img/svg/fb-logo.svg") center center/100% 100% no-repeat; }
+    .popup.register-popup .ref-links .apple {
+      width: 100%;
+      background: #cdcccc;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1b1b1b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; }
+      .popup.register-popup .ref-links .apple span {
+        padding: 15px 0 15px 40px;
+        position: relative; }
+        .popup.register-popup .ref-links .apple span:before {
+          content: '';
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: url("../img/svg/apple-logo.svg") center center/100% 100% no-repeat; }

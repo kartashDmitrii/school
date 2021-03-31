@@ -23,7 +23,8 @@ section.breadcrumbs {
         bottom: 0;
         right: -23px;
         margin: auto;
-        background: url("../img/svg/arrow-breadcrumbs.svg") center center/100% 100% no-repeat;
+        mask: url("../img/svg/arrow-breadcrumbs.svg") center center/100% 100% no-repeat;
+        background: #000;
         opacity: .5; }
       section.breadcrumbs .list li:nth-last-child(2):after {
         opacity: 1; }
@@ -36,3 +37,9 @@ section.breadcrumbs {
         text-decoration: inherit; }
       section.breadcrumbs .list li span {
         color: #1b1b1b; }
+  section.breadcrumbs.white .list li:after {
+    background: #ffffff; }
+  section.breadcrumbs.white .list a {
+    color: rgba(255, 255, 255, 0.5); }
+  section.breadcrumbs.white .list span {
+    color: #ffffff; }

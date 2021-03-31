@@ -1,0 +1,63 @@
+section.payment-methods
+  position: relative
+  padding-bottom: 130px
+  margin-bottom: 125px
+  &:before
+    content: ''
+    height: calc(100% + 250px)
+    width: 100vw
+    position: absolute
+    top: -250px
+    left: 0
+    background: #917898
+    z-index: -1
+  .container
+    position: static
+    display: flex
+    flex-direction: column
+    .title
+      font-weight: 500
+      font-size: 35px
+      line-height: 43px
+      color: #ffffff
+      margin: 0 0 90px
+    .payment-grid
+      margin-right: 30%
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-column-gap: 290px
+      grid-auto-rows: auto
+      grid-row-gap: 100px
+      .elem
+        display: flex
+        align-items: flex-start
+        .image
+          width: 80px
+          height: 80px
+          margin-right: 35px
+        .text
+          width: calc(100% - 115px)
+          display: flex
+          flex-direction: column
+          .name
+            font-weight: 500
+            font-size: 22px
+            line-height: 27px
+            color: #ffffff
+            margin: 0 0 20px
+          .desc
+            font-size: 16px
+            line-height: 21px
+            color: #ffffff
+            margin: 0
+  .dots-canvas
+    position: absolute
+    width: 430px
+    height: 105px
+    z-index: 1
+    &.first
+      right: -199px
+      bottom: 161px
+    &.second
+      right: 56px
+      bottom: 415px

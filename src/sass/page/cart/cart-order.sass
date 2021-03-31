@@ -1,0 +1,260 @@
+section.cart-order
+  display: flex
+  flex-direction: column
+  position: relative
+  .top-text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+    .text
+      font-weight: 500
+      font-size: 35px
+      line-height: 43px
+      color: #1b1b1b
+      margin: 0
+    .sum
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      color: #1b1b1b
+      margin: 0
+  .cart
+    margin-left: 115px
+    display: flex
+    flex-direction: column
+    padding-top: 20px
+    border-top: 1px solid #C4C4C4
+    margin-bottom: 65px
+    &>p
+      font-weight: 500
+      font-size: 22px
+      line-height: 27px
+      color: #1b1b1b
+    .elem
+      display: grid
+      grid-template-areas: 'image none price-text count-text sum-text' 'image name price count sum'
+      padding-bottom: 40px
+      border-bottom: 1px solid #C4C4C4
+      .image
+        grid-area: image
+        width: 150px
+        height: 120px
+        margin-right: 30px
+        img
+          width: 100%
+          height: 100%
+          object-fit: contain
+      .name
+        grid-area: name
+        font-weight: 500
+        font-size: 22px
+        line-height: 27px
+        color: #1b1b1b
+        margin: 0
+        text-decoration: none
+        align-self: center
+        max-width: 300px
+      .text
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #949494
+        margin: 0
+        align-self: flex-start
+        justify-self: center
+      .price-text
+        grid-area: price-text
+      .count-text
+        grid-area: count-text
+      .sum-text
+        grid-area: sum-text
+      .price, .sum
+        font-weight: 500
+        font-size: 22px
+        line-height: 27px
+        color: #1b1b1b
+        margin: 0
+        align-self: center
+        justify-self: center
+        span
+          margin-left: 3px
+      .price
+        grid-area: price
+      .sum
+        grid-area: sum
+      .count
+        grid-area: count
+        font-size: 24px
+        line-height: 29px
+        color: #1b1b1b
+        margin: 0
+        align-self: center
+        justify-self: center
+  .radio-block
+    display: flex
+    flex-direction: column
+    margin-left: 115px
+    padding-bottom: 75px
+    border-bottom: 1px solid #C4C4C4
+    margin-bottom: 65px
+    &>.text
+      font-weight: 500
+      font-size: 22px
+      line-height: 27px
+      color: #1b1b1b
+      margin: 0 0 85px
+      padding-left: 40px
+      position: relative
+      &:before
+        content: '2'
+        width: 25px
+        height: 25px
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        border: 1px solid #1B1B1B
+        box-sizing: border-box
+        border-radius: 50%
+        font-weight: 500
+        font-size: 12px
+        line-height: 15px
+        color: #1b1b1b
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+      a
+        color: #72a4f0
+    .content
+      margin-left: 30px
+      display: flex
+      flex-direction: column
+      .block
+        display: flex
+        flex-direction: column
+        transition: all .3s
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+        .radio
+          display: flex
+          align-items: center
+          justify-content: space-between
+          label
+            width: max-content
+            max-width: 80%
+            display: block
+            position: relative
+            padding: 2px 0 2px 50px
+            cursor: pointer
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            user-select: none
+            box-sizing: border-box
+            input
+              position: absolute
+              opacity: 0
+              cursor: pointer
+              height: 0
+              width: 0
+              &:checked ~ span
+                &:after
+                  content: ''
+            .check
+              position: absolute
+              top: 0
+              left: 0
+              bottom: 0
+              margin: auto
+              height: 24px
+              width: 24px
+              border: 1px solid #949494
+              border-radius: 50%
+              &:after
+                content: none
+                width: 12px
+                height: 12px
+                position: absolute
+                top: 0
+                right: 0
+                bottom: 0
+                left: 0
+                margin: auto
+                background: #ffc919
+                border-radius: 50%
+          .price
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            color: #1b1b1b
+            margin: 0
+        .radio-fields
+          display: flex
+          flex-direction: column
+          transition: height .3s
+          height: 0
+          overflow: hidden
+        &.active
+          padding: 40px 80px 40px 30px
+          border: 1px solid #565656
+          box-sizing: border-box
+          border-radius: 10px
+  .user-form
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+    margin-bottom: 60px
+    .row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+      label
+        width: calc(50% - 10px)
+        display: flex
+        flex-direction: column
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #949494
+        input
+          width: 100%
+          margin-top: 5px
+          border: 1px solid #4D4D4D
+          box-sizing: border-box
+          border-radius: 4px
+          background: transparent
+          font-size: 18px
+          line-height: 22px
+          padding: 10px 8px
+          color: #000
+  .duplicate
+    padding: 10px 25px
+    background: #917898
+    border-radius: 5px
+    font-size: 16px
+    line-height: 20px
+    color: #ffffff
+    margin: 0
+    text-decoration: none
+    outline: none
+    width: max-content
+    max-width: 100%
+    box-sizing: border-box
+  .up
+    position: absolute
+    bottom: 0
+    right: -282px
+    width: 82px
+    height: 82px
+    border-radius: 50%
+    cursor: pointer
+    border: none
+    outline: none
+    background: url("../img/svg/arrow-go-up.svg") center center / 50% 50% no-repeat #917898

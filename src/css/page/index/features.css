@@ -4,6 +4,16 @@ section.features {
   background: #917898;
   margin-bottom: 100px;
   position: relative; }
+  section.features.white {
+    background: transparent; }
+    section.features.white .dots-canvas {
+      display: none; }
+    section.features.white .container .title {
+      display: none; }
+    section.features.white .container .grid .elem .name {
+      color: #4d4d4d; }
+    section.features.white .container .grid .elem .desc {
+      color: #4d4d4d; }
   section.features .container {
     display: flex;
     flex-direction: column; }

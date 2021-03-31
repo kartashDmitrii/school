@@ -16,38 +16,21 @@
         {
             name: 'Главная',
             ref: '/'
-        },
-        {
-            name: 'Каталог',
-            ref: '/catalog.html'
-        },
-        {
-            name: 'Начальная школа ',
-            ref: '/catalog.html'
         }
     ],
-    curr: 'STEM'
+    curr: 'Каталог',
+    white: 'white'
 })
 <main>
-
-    <div class="container flex-container">
-        <aside>
-            @@include('./html-components/catalog/filter.html')
-        </aside>
-        <div class="small-container">
-            @@include('./html-components/catalog/description.html')
-            @@include('./html-components/catalog/catalog.html')
-        </div>
-    </div>
-    @@include('./html-components/global/product-slider.html', {
-    "name" : "Популярные товары"
-    })
-    @@include('./html-components/global/product-slider.html', {
-    "name" : "Популярные наборы"
-    })
-    @@include('./html-components/index/contacts.html')
+    @@include('./html-components/catalog/main-catalog.html')
 </main>
 @@include('./html-components/footer.html')
+<section class="wrapper close">
+    @@include('./html-components/global/popup/login-popup.html')
+    @@include('./html-components/global/popup/register-popup.html')
+    @@include('./html-components/global/popup/password-recover-popup.html')
+    @@include('./html-components/global/popup/cart-popup.html')
+</section>
 <script src="js/lib.min.js"></script>
 <script src="js/main-min.js"></script>
 </body>

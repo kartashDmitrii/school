@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>school</title>
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="rounded">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="#">
+        </a>
+        <div class="content">
+            <div class="top">
+                <div class="phones" data-hide>
+                    <div class="main-phone">
+                        <a href="tel:380443533377">38 044 353-33-77</a>
+                        <span data-btn></span>
+                    </div>
+                    <ul data-block>
+                        <li><a href="tel:380443533377">38 044 353-33-77</a></li>
+                        <li><a href="tel:380443533377">38 044 353-33-77</a></li>
+                        <li><a href="tel:380443533377">38 044 353-33-77</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" name="search" placeholder="Поиск товаров">
+                    </label>
+                    <a href="#"></a>
+                </div>
+                <div class="langs">
+                    <a href="#" class="current">RU</a>
+                    <a href="#">UA</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <nav>
+                    <ul class="links">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="user-menu">
+                    <a href="#" class="user" data-popup="login-popup"></a>
+                    <a href="#" class="favorite">
+                        <span>999</span>
+                    </a>
+                    <a href="#" class="cart" data-popup="cart-popup"><span class="count">14</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container flex-container">
+        <aside>
+            <section class="user-info">
+    <div class="user">
+        <div class="image">
+            <img src="img/svg/user.svg" alt="#">
+        </div>
+        <div class="info">
+            <p class="name">Ирина Анохина</p>
+            <p class="email">anohina.i@gmail.com</p>
+        </div>
+    </div>
+    <div class="tabs">
+        <div class="top">
+            <a href="#" class="my-orders"><span>Мои заказы</span></a>
+            <a href="#" class="favorite"><span>Избранное</span></a>
+        </div>
+        <div class="bottom">
+            <a href="#" class="watched"><span>Просмотренные товары</span></a>
+            <a href="#" class="newsletters"><span>Рассылки</span></a>
+            <a href="#" class="bonuses"><span>Бонусы и подарки</span></a>
+            <a href="#" class="recommendations"><span>Рекомендации</span></a>
+            <a href="#" class="reviews"><span>Мои отзывы</span></a>
+            <a href="#" class="lists"><span>Моя переписка</span></a>
+            <a href="#" class="promotions"><span>Участие в акциях</span></a>
+        </div>
+    </div>
+</section>
+        </aside>
+        <div class="small-container">
+            <section class="my-orders">
+    <p class="name">Мои заказы</p>
+    <div class="order-list">
+        <div class="order" data-hide>
+            <div class="top-block" data-btn>
+                <div class="status canceled"></div>
+                <p class="status-code">№334 339 244 от 11.04.21</p>
+                <p class="status-name">Отменен</p>
+                <div class="sum-info">
+                    <p class="text">Сумма заказа</p>
+                    <p class="sum">219,00 грн.</p>
+                </div>
+                <div class="image">
+                    <img src="img/catalog-product-img.png" alt="#">
+                </div>
+            </div>
+            <div class="bottom-block" data-block>
+                <div class="characteristic">
+                    <p class="text">Характеристики:</p>
+                    <ul>
+                        <li>
+                            <p class="name">Возраст</p>
+                            <p class="value">8+</p>
+                        </li>
+                        <li>
+                            <p class="name">Размеры упаковки (в*ш*г)</p>
+                            <p class="value">285*375*65 мм</p>
+                        </li>
+                        <li>
+                            <p class="name">Комплектация</p>
+                            <p class="value">123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip">
+                    <p class="text">Комплектация:</p>
+                    <ul>
+                        <li>
+                            <p class="name">STEAM-набор</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                        <li>
+                            <p class="name">Инструкция</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order" data-hide>
+            <div class="top-block" data-btn>
+                <div class="status arrived"></div>
+                <p class="status-code">№334 339 244 от 11.04.21</p>
+                <p class="status-name">Доставлен</p>
+                <div class="sum-info">
+                    <p class="text">Сумма заказа</p>
+                    <p class="sum">219,00 грн.</p>
+                </div>
+                <div class="image">
+                    <img src="img/catalog-product-img.png" alt="#">
+                </div>
+            </div>
+            <div class="bottom-block" data-block>
+                <div class="characteristic">
+                    <p class="text">Характеристики:</p>
+                    <ul>
+                        <li>
+                            <p class="name">Возраст</p>
+                            <p class="value">8+</p>
+                        </li>
+                        <li>
+                            <p class="name">Размеры упаковки (в*ш*г)</p>
+                            <p class="value">285*375*65 мм</p>
+                        </li>
+                        <li>
+                            <p class="name">Комплектация</p>
+                            <p class="value">123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip">
+                    <p class="text">Комплектация:</p>
+                    <ul>
+                        <li>
+                            <p class="name">STEAM-набор</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                        <li>
+                            <p class="name">Инструкция</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order" data-hide>
+            <div class="top-block" data-btn>
+                <div class="status ondevelop"></div>
+                <p class="status-code">№334 339 244 от 11.04.21</p>
+                <p class="status-name">В работе</p>
+                <div class="sum-info">
+                    <p class="text">Сумма заказа</p>
+                    <p class="sum">219,00 грн.</p>
+                </div>
+                <div class="image">
+                    <img src="img/catalog-product-img.png" alt="#">
+                </div>
+            </div>
+            <div class="bottom-block" data-block>
+                <div class="characteristic">
+                    <p class="text">Характеристики:</p>
+                    <ul>
+                        <li>
+                            <p class="name">Возраст</p>
+                            <p class="value">8+</p>
+                        </li>
+                        <li>
+                            <p class="name">Размеры упаковки (в*ш*г)</p>
+                            <p class="value">285*375*65 мм</p>
+                        </li>
+                        <li>
+                            <p class="name">Комплектация</p>
+                            <p class="value">123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip">
+                    <p class="text">Комплектация:</p>
+                    <ul>
+                        <li>
+                            <p class="name">STEAM-набор</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                        <li>
+                            <p class="name">Инструкция</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order" data-hide>
+            <div class="top-block" data-btn>
+                <div class="status arrived"></div>
+                <p class="status-code">№334 339 244 от 11.04.21</p>
+                <p class="status-name">Доставлен</p>
+                <div class="sum-info">
+                    <p class="text">Сумма заказа</p>
+                    <p class="sum">219,00 грн.</p>
+                </div>
+                <div class="image">
+                    <img src="img/catalog-product-img.png" alt="#">
+                </div>
+            </div>
+            <div class="bottom-block" data-block>
+                <div class="characteristic">
+                    <p class="text">Характеристики:</p>
+                    <ul>
+                        <li>
+                            <p class="name">Возраст</p>
+                            <p class="value">8+</p>
+                        </li>
+                        <li>
+                            <p class="name">Размеры упаковки (в*ш*г)</p>
+                            <p class="value">285*375*65 мм</p>
+                        </li>
+                        <li>
+                            <p class="name">Комплектация</p>
+                            <p class="value">123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip">
+                    <p class="text">Комплектация:</p>
+                    <ul>
+                        <li>
+                            <p class="name">STEAM-набор</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                        <li>
+                            <p class="name">Инструкция</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order" data-hide>
+            <div class="top-block" data-btn>
+                <div class="status arrived"></div>
+                <p class="status-code">№334 339 244 от 11.04.21</p>
+                <p class="status-name">Доставлен</p>
+                <div class="sum-info">
+                    <p class="text">Сумма заказа</p>
+                    <p class="sum">219,00 грн.</p>
+                </div>
+                <div class="image">
+                    <img src="img/catalog-product-img.png" alt="#">
+                </div>
+            </div>
+            <div class="bottom-block" data-block>
+                <div class="characteristic">
+                    <p class="text">Характеристики:</p>
+                    <ul>
+                        <li>
+                            <p class="name">Возраст</p>
+                            <p class="value">8+</p>
+                        </li>
+                        <li>
+                            <p class="name">Размеры упаковки (в*ш*г)</p>
+                            <p class="value">285*375*65 мм</p>
+                        </li>
+                        <li>
+                            <p class="name">Комплектация</p>
+                            <p class="value">123</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip">
+                    <p class="text">Комплектация:</p>
+                    <ul>
+                        <li>
+                            <p class="name">STEAM-набор</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                        <li>
+                            <p class="name">Инструкция</p>
+                            <p class="count">1 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+    </div>
+    <section class="product-slider container ">
+    <span class="title">Популярные наборы</span>
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="arrow prev"></div>
+            <div class="arrow next"></div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="#">
+        </a>
+        <ul class="menu">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Сервис</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+        <div class="social">
+            <p>Мы в соцсетях:</p>
+            <div class="links">
+                <a href="#" class="telegram"></a>
+                <a href="#" class="instagram"></a>
+                <a href="#" class="facebook"></a>
+            </div>
+        </div>
+    </div>
+    <a href="#">Разработано в </a>
+</footer>
+<section class="wrapper close">
+    <section class="cart-popup popup">
+    <p class="text">Корзина</p>
+    <div class="cart-list">
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+    </div>
+    <div class="user-menu">
+        <a href="#" class="close">Продолжить покупки</a>
+        <div class="continue">
+            <p class="total-sum">512 <span>грн.</span></p>
+            <a href="/cart.html">Оформить заказ</a>
+        </div>
+    </div>
+    <div class="popup-slider">
+        <section class="product-slider container three-slides-per-view">
+    <span class="title">Похожие товары</span>
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="arrow prev"></div>
+            <div class="arrow next"></div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+</section>
+    </div>
+    <div class="close"></div>
+</section>
+</section>
+<script src="js/lib.min.js"></script>
+<script src="js/main-min.js"></script>
+</body>
+</html>

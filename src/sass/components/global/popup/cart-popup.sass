@@ -1,0 +1,191 @@
+section.cart-popup.popup
+  display: flex
+  flex-direction: column
+  padding: 0
+  max-width: 1300px
+  width: 100%
+  .text
+    font-weight: 500
+    font-size: 35px
+    line-height: 43px
+    color: #1b1b1b
+    margin: 75px 0 30px 65px
+  .cart-list
+    display: flex
+    flex-direction: column
+    margin-bottom: 98px
+    .elem
+      padding: 35px 30px 25px 65px
+      border-top: 1px solid #949494
+      box-sizing: border-box
+      display: grid
+      grid-template-areas: 'image name name delete' 'image count count sum'
+      .image
+        grid-area: image
+        width: 215px
+        height: 175px
+        margin-right: 65px
+        img
+          width: 100%
+          height: 100%
+          object-fit: contain
+      .name
+        grid-area: name
+        align-self: center
+        font-weight: 500
+        font-size: 22px
+        line-height: 27px
+        color: #1b1b1b
+        margin: 0
+        text-decoration: none
+      .delete
+        grid-area: delete
+        align-self: center
+        justify-self: flex-end
+        width: 20px
+        height: 20px
+        position: relative
+        &:before
+          content: ''
+          width: 100%
+          height: 2px
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          transform: rotate(45deg)
+          background: #000
+        &:after
+          content: ''
+          width: 100%
+          height: 2px
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          transform: rotate(-45deg)
+          background: #000
+      .count
+        display: flex
+        align-items: center
+        align-self: flex-end
+        justify-self: flex-end
+        grid-area: count
+        .count-btn
+          width: 22px
+          height: 22px
+          border: none
+          background: transparent
+          position: relative
+          cursor: pointer
+          &:before
+            content: ''
+            width: 100%
+            height: 2px
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            background: #949494
+          &.plus
+            &:after
+              content: ''
+              width: 100%
+              height: 2px
+              position: absolute
+              top: 0
+              right: 0
+              bottom: 0
+              left: 0
+              margin: auto
+              background: #949494
+              transform: rotate(90deg)
+        label
+          margin: 0 22px
+          width: 75px
+          display: flex
+          input
+            width: 100%
+            border: 1px solid #949494
+            box-sizing: border-box
+            border-radius: 4px
+            padding: 10px
+            text-align: center
+            outline: none
+            font-size: 24px
+            line-height: 29px
+            color: #000
+            -moz-appearance: textfield
+            appearance: none
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button
+              -webkit-appearance: none
+              margin: 0
+      .sum
+        align-self: flex-end
+        justify-self: flex-end
+        grid-area: sum
+        font-weight: 500
+        font-size: 26px
+        line-height: 32px
+        color: #000
+        margin: 0
+        span
+          margin-left: 3px
+      &:last-child
+        border-bottom: 1px solid #949494
+  .user-menu
+    margin: 0 30px 88px 70px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .close
+      min-width: 230px
+      border: 2px solid #917898
+      box-sizing: border-box
+      border-radius: 5px
+      padding: 10px
+      font-size: 16px
+      line-height: 20px
+      color: #917898
+      cursor: pointer
+      text-decoration: none
+      outline: none
+      text-align: center
+    .continue
+      display: flex
+      align-items: center
+      max-width: 100%
+      width: max-content
+      .total-sum
+        font-weight: 500
+        font-size: 42px
+        line-height: 51px
+        color: #000
+        margin: 0 40px 0 0
+        span
+          margin-left: 3px
+      a
+        min-width: 190px
+        background: #917898
+        border-radius: 5px
+        padding: 10px
+        font-size: 16px
+        line-height: 20px
+        color: #ffffff
+        margin: 0
+        text-decoration: none
+        text-align: center
+  .popup-slider
+    padding: 0 100px
+    .product-card .btns button
+      min-width: 150px
+  &>.close
+    top: 85px
+    right: 35px

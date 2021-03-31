@@ -1,16 +1,6 @@
 section.about-company {
   position: relative;
-  margin-bottom: 75px; }
-  section.about-company:after {
-    content: '';
-    width: 170px;
-    height: 145px;
-    position: absolute;
-    top: 355px;
-    left: 628px;
-    background: url("../img/svg/figure.svg") center center/100% 100% no-repeat;
-    transform: rotate(180deg);
-    z-index: -1; }
+  margin-bottom: 155px; }
   section.about-company .container {
     position: static;
     display: grid;
@@ -20,6 +10,16 @@ section.about-company {
     grid-gap: 90px; }
     section.about-company .container .image {
       height: 430px; }
+      section.about-company .container .image:after {
+        content: '';
+        width: 170px;
+        height: 145px;
+        position: absolute;
+        top: 355px;
+        left: 628px;
+        background: url("../img/svg/figure.svg") center center/100% 100% no-repeat;
+        transform: rotate(180deg);
+        z-index: -1; }
       section.about-company .container .image img {
         position: absolute;
         width: 975px;
@@ -28,6 +28,13 @@ section.about-company {
         left: 0;
         border-radius: 0 500px 500px 0;
         z-index: 1; }
+      section.about-company .container .image.reverse:after {
+        left: auto;
+        right: 775px; }
+      section.about-company .container .image.reverse img {
+        left: auto;
+        right: 0;
+        transform: matrix(-1, 0, 0, 1, 0, 0); }
     section.about-company .container .text {
       display: flex;
       flex-direction: column; }
@@ -55,3 +62,6 @@ section.about-company {
     top: 377px;
     left: 314px;
     z-index: -1; }
+    section.about-company .dots-canvas.reverse {
+      left: auto;
+      right: 455px; }

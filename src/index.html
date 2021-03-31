@@ -14,17 +14,27 @@
     <main>
         @@include('./html-components/index/top-catalog.html')
         @@include('./html-components/global/product-slider.html', {
-            "name" : "Популярные товары"
+            "name" : "Популярные товары",
+            "countClass" : ""
         })
-        @@include('./html-components/index/features.html')
+        @@include('./html-components/index/features.html', {
+            white: ''
+        })
         @@include('./html-components/global/product-slider.html', {
-        "name" : "Популярные наборы"
+            "name" : "Популярные наборы",
+            "countClass" : ""
         })
         @@include('./html-components/index/about-company.html')
         @@include('./html-components/index/solutions.html')
         @@include('./html-components/index/contacts.html')
     </main>
     @@include('./html-components/footer.html')
+    <section class="wrapper close">
+        @@include('./html-components/global/popup/login-popup.html')
+        @@include('./html-components/global/popup/register-popup.html')
+        @@include('./html-components/global/popup/password-recover-popup.html')
+        @@include('./html-components/global/popup/cart-popup.html')
+    </section>
 <script src="js/lib.min.js"></script>
 <script src="js/main-min.js"></script>
 </body>

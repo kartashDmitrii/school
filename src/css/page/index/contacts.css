@@ -1,6 +1,7 @@
 section.contacts {
   position: relative;
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+  margin-top: 100px; }
   section.contacts .dots-canvas {
     position: absolute;
     left: -27px;

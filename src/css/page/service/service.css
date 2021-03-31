@@ -1,0 +1,56 @@
+section.service {
+  position: relative;
+  padding-bottom: 120px; }
+  section.service .container {
+    display: flex;
+    flex-direction: column;
+    position: static; }
+  section.service:before {
+    content: '';
+    height: calc(100% + 250px);
+    width: 100vw;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    background: #917898;
+    z-index: -1; }
+  section.service .title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #ffffff;
+    margin: 0 0 15px; }
+  section.service .desc {
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+    max-width: 705px;
+    margin-bottom: 45px; }
+  section.service .block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px; }
+    section.service .block:last-child {
+      margin-bottom: 0; }
+    section.service .block .block-name {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #ffffff;
+      margin: 0 0 12px; }
+    section.service .block .block-text {
+      font-size: 16px;
+      line-height: 21px;
+      color: #ffffff;
+      margin: 0; }
+  section.service .dots-canvas {
+    position: absolute;
+    width: 430px;
+    height: 105px;
+    z-index: 1; }
+    section.service .dots-canvas.first {
+      right: 271px;
+      bottom: 152px; }
+    section.service .dots-canvas.second {
+      right: -48px;
+      bottom: 357px; }

@@ -29,7 +29,7 @@ function libStyles(){
 function libJs(){
     return gulp.src('./src/libJs/**/*.js')
         .pipe(order([
-            "lib.js"
+            "jquery.js"
             ]))
         .pipe(concat('lib.min.js'))
         .pipe(gulp.dest('./build/js'))

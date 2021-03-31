@@ -1,0 +1,138 @@
+section.user-info
+  display: flex
+  flex-direction: column
+  width: 390px
+  margin-right: 30px
+  margin-bottom: 115px
+  margin-top: 40px
+  .user
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+    .image
+      width: 40px
+      height: 40px
+      margin-right: 24px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .info
+      width: calc(100% - 64px)
+      display: flex
+      flex-direction: column
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+      color: #565656
+      .name
+        font-weight: 600
+        margin: 0 0 2px
+      .email
+        text-decoration: underline
+        margin: 0
+  .tabs
+    display: flex
+    flex-direction: column
+    border: 1px solid #565656
+    box-sizing: border-box
+    border-radius: 10px
+    padding: 45px 0
+    width: 100%
+    a
+      width: 100%
+      box-sizing: border-box
+      font-size: 18px
+      line-height: 22px
+      color: #1b1b1b
+      text-decoration: none
+      padding: 5px 10px 5px 110px
+      margin-bottom: 35px
+      span
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          margin: auto
+      &:hover
+        background: rgba(255, 201, 25, 0.5)
+      &.my-orders
+        span:before
+          left: -44px
+          width: 30px
+          height: 30px
+          background: url("../img/svg/cart.svg") center center / 100% 100% no-repeat
+      &.favorite
+        span:before
+          left: -39px
+          width: 24px
+          height: 24px
+          background: url("../img/svg/favorite.svg") center center / 100% 100% no-repeat
+      &.watched
+        span:before
+          left: -40px
+          width: 25px
+          height: 25px
+          background: url("../img/svg/eye.svg") center center / 100% 100% no-repeat
+      &.newsletters
+        span:before
+          left: -40px
+          width: 24px
+          height: 24px
+          background: url("../img/svg/notification.svg") center center / 100% 100% no-repeat
+      &.bonuses
+        span:before
+          left: -40px
+          width: 25px
+          height: 25px
+          background: url("../img/svg/gift-box.svg") center center / 100% 100% no-repeat
+      &.recommendations
+        span:before
+          left: -40px
+          width: 25px
+          height: 25px
+          background: url("../img/svg/quality.svg") center center / 100% 100% no-repeat
+      &.reviews
+        span:before
+          left: -40px
+          width: 26px
+          height: 26px
+          background: url("../img/svg/consulting-message.svg") center center / 100% 100% no-repeat
+      &.lists
+        span:before
+          left: -40px
+          width: 27px
+          height: 27px
+          background: url("../img/svg/email.svg") center center / 100% 100% no-repeat
+      &.promotions
+        span:before
+          left: -40px
+          width: 26px
+          height: 26px
+          background: url("../img/svg/event.svg") center center / 100% 100% no-repeat
+    .top
+      display: flex
+      flex-direction: column
+      width: 100%
+      padding-bottom: 30px
+      position: relative
+      a:last-child
+        margin-bottom: 0
+      &:after
+        content: ''
+        width: calc(100% - 20px)
+        height: 1px
+        background: #565656
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+    .bottom
+      padding-top: 30px
+      display: flex
+      flex-direction: column
+      a:last-child
+        margin-bottom: 0

@@ -1,0 +1,175 @@
+.popup.login-popup
+  flex-direction: column
+  padding: 48px 50px 36px
+  box-sizing: border-box
+  align-items: center
+  &>.text
+    font-weight: 600
+    font-size: 28px
+    line-height: 34px
+    color: #1b1b1b
+    margin: 0 0 36px
+  form
+    display: flex
+    flex-direction: column
+    max-width: 500px
+    width: 100%
+    label
+      width: 100%
+      display: flex
+      margin-bottom: 25px
+      input
+        width: 100%
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        color: #949494
+        padding: 18px 22px
+        box-sizing: border-box
+        outline: none
+        border: 1px solid #565656
+        border-radius: 4px
+    .reCaptcha
+      margin-bottom: 20px
+    input[type="submit"]
+      width: 100%
+      background: #917898
+      border-radius: 100px
+      padding: 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 500
+      font-size: 22px
+      line-height: 27px
+      color: #ffffff
+      margin: 0 0 48px
+      border: none
+      outline: none
+      box-sizing: border-box
+      cursor: pointer
+  .hr
+    display: block
+    width: max-content
+    background: #ffffff
+    padding: 0 10px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: #1b1b1b
+    position: relative
+    margin-bottom: 32px
+    &:before
+      content: ''
+      width: 500px
+      height: 1px
+      z-index: -1
+      position: absolute
+      top: 0
+      bottom: 0
+      left: -250px
+      right: -250px
+      margin: auto
+      background: #808080
+  .ref-links
+    display: flex
+    flex-direction: column
+    width: 500px
+    margin-bottom: 30px
+    .google
+      width: 100%
+      background: #FFFFFF
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+      border-radius: 100px
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: #1b1b1b
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      margin-bottom: 32px
+      span
+        padding: 15px 0 15px 40px
+        position: relative
+        &:before
+          content: ''
+          width: 21px
+          height: 21px
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          background: url("../img/google-logo.png") center center / 100% 100% no-repeat
+    .facebook
+      width: 100%
+      background: #0063bf
+      border-radius: 100px
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      margin-bottom: 32px
+      span
+        padding: 15px 0 15px 32px
+        position: relative
+        &:before
+          content: ''
+          width: 13.5px
+          height: 25.75px
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          background: url("../img/svg/fb-logo.svg") center center / 100% 100% no-repeat
+    .apple
+      width: 100%
+      background: #cdcccc
+      border-radius: 100px
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: #1b1b1b
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      span
+        padding: 15px 0 15px 40px
+        position: relative
+        &:before
+          content: ''
+          width: 25px
+          height: 25px
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          background: url("../img/svg/apple-logo.svg") center center / 100% 100% no-repeat
+  &>a
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: #703e7e
+    margin: 0 0 20px
+    text-decoration: none
+  .register
+    display: flex
+    align-items: center
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    p
+      margin: 0
+      color: #1b1b1b
+    a
+      color: #703e7e
+      text-decoration: none

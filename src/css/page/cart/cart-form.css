@@ -1,0 +1,72 @@
+section.cart-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px; }
+  section.cart-form > .text {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #1b1b1b;
+    margin: 0 0 43px; }
+  section.cart-form .content {
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 110px); }
+    section.cart-form .content .text {
+      padding-left: 40px;
+      position: relative;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #1b1b1b;
+      margin: 0 0 45px; }
+      section.cart-form .content .text:before {
+        content: '1';
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: 1px solid #1B1B1B;
+        box-sizing: border-box;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1b1b1b;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    section.cart-form .content form {
+      display: flex;
+      flex-direction: column; }
+      section.cart-form .content form .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px; }
+        section.cart-form .content form .row:last-child {
+          margin-bottom: 0; }
+        section.cart-form .content form .row label {
+          width: calc(50% - 10px);
+          display: flex;
+          flex-direction: column;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: #949494; }
+          section.cart-form .content form .row label input {
+            width: 100%;
+            margin-top: 5px;
+            border: 1px solid #4D4D4D;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background: transparent;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 10px 8px;
+            color: #000; }

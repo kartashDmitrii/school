@@ -1,0 +1,82 @@
+section.about-us {
+  margin-bottom: 125px;
+  padding-bottom: 105px;
+  position: relative; }
+  section.about-us:before {
+    content: '';
+    height: calc(100% + 250px);
+    width: 100vw;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    background: #917898;
+    z-index: -1; }
+  section.about-us .container {
+    display: flex;
+    align-items: center;
+    position: static;
+    justify-content: flex-end;
+    min-height: 590px; }
+    section.about-us .container .image {
+      width: 50%;
+      max-width: 978px;
+      height: 588px;
+      position: absolute;
+      left: 0;
+      top: -105px;
+      bottom: 0;
+      margin: auto;
+      border-radius: 0 500px 500px 0; }
+      section.about-us .container .image:after {
+        content: '';
+        width: 525px;
+        height: 554px;
+        position: absolute;
+        right: -46px;
+        bottom: -40px;
+        background: url("../img/svg/figure.svg") center center/100% 100% no-repeat;
+        z-index: 2; }
+      section.about-us .container .image:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+        z-index: 1;
+        border-radius: 0 500px 500px 0; }
+      section.about-us .container .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 500px 500px 0; }
+    section.about-us .container .text {
+      width: calc(50% - 70px);
+      display: flex;
+      flex-direction: column; }
+      section.about-us .container .text .title {
+        font-family: 'Exo2';
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: #ffc919;
+        margin: 0 0 35px; }
+      section.about-us .container .text .desc {
+        display: flex;
+        flex-direction: column; }
+        section.about-us .container .text .desc > * {
+          margin: 0 0 35px; }
+          section.about-us .container .text .desc > *:last-child {
+            margin-bottom: 0; }
+        section.about-us .container .text .desc p {
+          font-size: 20px;
+          line-height: 24px;
+          color: #ffffff; }
+    section.about-us .container .dots-canvas {
+      position: absolute;
+      right: 20px;
+      bottom: -14px;
+      z-index: 3;
+      width: 204px;
+      height: 108px; }

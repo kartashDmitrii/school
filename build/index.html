@@ -51,11 +51,11 @@
                     </ul>
                 </nav>
                 <div class="user-menu">
-                    <a href="#" class="user"></a>
+                    <a href="#" class="user" data-popup="login-popup"></a>
                     <a href="#" class="favorite">
                         <span>999</span>
                     </a>
-                    <a href="#" class="cart"><span class="count">14</span></a>
+                    <a href="#" class="cart" data-popup="cart-popup"><span class="count">14</span></a>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
         <div class="dots-canvas"></div>
     </div>
 </section>
-        <section class="product-slider container">
+        <section class="product-slider container ">
     <span class="title">Популярные товары</span>
     <div class="slider">
         <div class="swiper-container">
@@ -348,7 +348,7 @@
         <div class="pagination"></div>
     </div>
 </section>
-        <section class="features">
+        <section class="features ">
     <div class="container">
         <p class="title">Основными ценностями компании являются:</p>
         <div class="grid">
@@ -387,7 +387,7 @@
     </div>
     <div class="dots-canvas"></div>
 </section>
-        <section class="product-slider container">
+        <section class="product-slider container ">
     <span class="title">Популярные наборы</span>
     <div class="slider">
         <div class="swiper-container">
@@ -729,6 +729,353 @@
     </div>
     <a href="#">Разработано в </a>
 </footer>
+    <section class="wrapper close">
+        <section class="login-popup popup">
+    <div class="close"></div>
+    <p class="text">Вход</p>
+    <form>
+        <label>
+            <input type="email" name="email" placeholder="Email">
+        </label>
+        <label>
+            <input type="password" name="password" placeholder="Пароль (8 + символов)">
+        </label>
+        <div class="reCaptcha">
+            <img src="img/reCAPTCHA.png" alt="">
+        </div>
+        <input type="submit" value="Войти">
+    </form>
+    <span class="hr">или</span>
+    <div class="ref-links">
+        <a href="#" class="google"><span>Войти при помощи Google</span></a>
+        <a href="#" class="facebook"><span>Войти при помощи Facebook</span></a>
+        <a href="#" class="apple"><span>Войти при помощи Apple</span></a>
+    </div>
+    <a href="#" data-popup="password-recover-popup" class="forget-password">Забыли пароль?</a>
+    <div class="register">
+        <p>Не участник?</p>
+        <a href="#" data-popup="register-popup">Зарегестрироваться</a>
+    </div>
+</section>
+        <section class="register-popup popup">
+    <p class="text">Регистрация</p>
+    <form>
+        <div class="row">
+            <label>
+                Имя/Логин
+                <input type="text" name="login">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                Пароль (8 + символов)
+                <input type="password" name="password">
+            </label>
+            <label>
+                Подтвердить пароль
+                <input type="password" name="confirm password">
+            </label>
+        </div>
+        <label class="confirm">
+            <span class="text">Я принимаю условия пользовательского соглашения и даю свое согласие на обработку персональных данных</span>
+            <input type="checkbox" name="confirm">
+            <span class="check"></span>
+        </label>
+        <input type="submit" value="Зарегестрироваться">
+    </form>
+    <span class="hr">или</span>
+    <div class="ref-links">
+        <a href="#" class="google"><span>Войти при помощи Google</span></a>
+        <a href="#" class="facebook"><span>Войти при помощи Facebook</span></a>
+        <a href="#" class="apple"><span>Войти при помощи Apple</span></a>
+    </div>
+    <div class="close"></div>
+</section>
+        <section class="password-recover-popup popup">
+    <p class="text">Восстановление пароля</p>
+    <div class="desc">
+        <p>Для восстановления пароля, укажите адрес электронной почты. Если вы не помните адрес электронной почты, то
+            обратитесь в наш отдел поддержки клиентов и расскажите как можно больше информации, чтобы подтвердить вашу
+            личность.</p>
+    </div>
+    <form>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label>
+        <p>После восстановления новый пароль будет выслан вам на електронную почту</p>
+        <input type="submit" value="Восстановить">
+    </form>
+    <div class="close"></div>
+</section>
+        <section class="cart-popup popup">
+    <p class="text">Корзина</p>
+    <div class="cart-list">
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+    </div>
+    <div class="user-menu">
+        <a href="#" class="close">Продолжить покупки</a>
+        <div class="continue">
+            <p class="total-sum">512 <span>грн.</span></p>
+            <a href="/cart.html">Оформить заказ</a>
+        </div>
+    </div>
+    <div class="popup-slider">
+        <section class="product-slider container three-slides-per-view">
+    <span class="title">Похожие товары</span>
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <a href="#" class="image">
+                            <img src="img/product-img.png" alt="">
+                        </a>
+                        <a href="#" class="name">Комплект лабораторный "Молекулярная физика и термодинамика" с цифровым датчиком B-PRO</a>
+                        <p class="code">Код товара: 121386</p>
+                        <div class="price-block">
+                            <p class="price">6 899 грн.</p>
+                            <p class="count">от 100 шт.</p>
+                        </div>
+                        <div class="btns">
+                            <button>Купить</button>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="arrow prev"></div>
+            <div class="arrow next"></div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+</section>
+    </div>
+    <div class="close"></div>
+</section>
+    </section>
 <script src="js/lib.min.js"></script>
 <script src="js/main-min.js"></script>
 </body>

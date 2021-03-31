@@ -23,7 +23,8 @@ section.breadcrumbs
         bottom: 0
         right: -23px
         margin: auto
-        background: url("../img/svg/arrow-breadcrumbs.svg") center center / 100% 100% no-repeat
+        mask: url("../img/svg/arrow-breadcrumbs.svg") center center / 100% 100% no-repeat
+        background: #000
         opacity: .5
       &:nth-last-child(2):after
         opacity: 1
@@ -36,3 +37,12 @@ section.breadcrumbs
         text-decoration: inherit
       span
         color: #1b1b1b
+  &.white
+    .list
+      li
+        &:after
+          background: #ffffff
+      a
+        color: rgba(255, 255, 255, 0.5)
+      span
+        color: #ffffff

@@ -1,0 +1,49 @@
+<section class="cart-popup popup">
+    <p class="text">Корзина</p>
+    <div class="cart-list">
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+        <div class="elem">
+            <div class="image">
+                <img src="img/catalog-product-img3.png" alt="">
+            </div>
+            <a href="/" class="name">STEAM-набор 4M Научная кухня 00-05533</a>
+            <div class="count">
+                <button class="minus count-btn"></button>
+                <label>
+                    <input type="number" name="count" value="1">
+                </label>
+                <button class="plus count-btn"></button>
+            </div>
+            <p class="sum">256<span>грн.</span></p>
+            <div class="delete"></div>
+        </div>
+    </div>
+    <div class="user-menu">
+        <a href="#" class="close">Продолжить покупки</a>
+        <div class="continue">
+            <p class="total-sum">512 <span>грн.</span></p>
+            <a href="/cart.html">Оформить заказ</a>
+        </div>
+    </div>
+    <div class="popup-slider">
+        @@include('./../product-slider.html', {
+            "name" : "Похожие товары",
+            "countClass" : "three-slides-per-view"
+        })
+    </div>
+    <div class="close"></div>
+</section>

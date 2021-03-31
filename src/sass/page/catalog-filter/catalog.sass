@@ -1,6 +1,7 @@
 section.catalog
   display: flex
   flex-direction: column
+  margin-bottom: 120px
   .catalog-buttons
     display: flex
     align-items: flex-start
@@ -138,3 +139,67 @@ section.catalog
     grid-auto-rows: auto
     grid-column-gap: 30px
     grid-row-gap: 50px
+    margin-bottom: 75px
+    &.row-grid
+      grid-template-columns: 1fr
+      grid-row-gap: 20px
+      .product-card
+        display: grid
+        grid-template-areas: 'image name name btn' 'image code price btn'
+        align-items: center
+        grid-gap: 5px
+        padding: 5px 10px
+        .image
+          grid-area: image
+          width: 200px
+          padding-bottom: 200px
+          margin-right: 40px
+        .name
+          grid-area: name
+          margin: 0
+        .code
+          grid-area: code
+          margin: 0
+        .price-block
+          grid-area: price
+          margin: 0
+          justify-content: flex-start
+          .price
+            margin-right: 15px
+        .btns
+          grid-area: btn
+          display: flex
+          flex-direction: column
+          margin: 0 0 0 20px
+          button
+            margin-bottom: 10px
+
+  .pagination
+    display: flex
+    justify-content: center
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      align-items: center
+      li
+        display: flex
+        margin-right: 10px
+        align-items: center
+        justify-content: center
+        &:last-child
+          margin-right: 0
+        a
+          font-size: 16px
+          line-height: 20px
+          color: #917898
+          padding: 9px 14px
+          border: 2px solid #917898
+          box-sizing: border-box
+          border-radius: 4px
+          text-decoration: none
+        &.active
+          a
+            background: #917898
+            color: #ffffff
