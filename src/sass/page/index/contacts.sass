@@ -6,14 +6,26 @@ section.contacts
     position: absolute
     left: -27px
     top: -16px
+    @media (max-width: 1080px)
+      display: none
   .container
     display: grid
     align-items: flex-start
     grid-template-columns: calc(50% - 87.5px) calc(50% - 87.5px)
     grid-column-gap: 175px
+    @media (max-width: 1719px)
+      grid-template-columns: calc(50% - 40px) calc(50% - 40px)
+      grid-column-gap: 80px
+    @media (max-width: 1200px)
+      grid-template-columns: calc(40% - 30px) calc(60% - 30px)
+      grid-column-gap: 60px
+    @media (max-width: 920px)
+      grid-template-columns: 1fr
     .text
       display: flex
       flex-direction: column
+      @media (max-width: 920px)
+        margin-bottom: 20px
       .title
         font-weight: 500
         font-size: 35px
@@ -24,8 +36,15 @@ section.contacts
         display: grid
         grid-template-columns: 1fr 1fr
         grid-auto-rows: auto
-        grid-column-gap: 130px
+        grid-column-gap: 45px
         grid-row-gap: 24px
+        @media (max-width: 920px)
+          grid-template-columns: 1fr 1fr 1fr
+        @media (max-width: 767px)
+          grid-template-columns: 1fr 1fr
+        @media (max-width: 480px)
+          grid-template-columns: 1fr
+          grid-gap: 15px
         .elem
           display: flex
           flex-direction: column
@@ -35,6 +54,9 @@ section.contacts
             line-height: 22px
             color: #1b1b1b
             margin: 0 0 12px
+            @media (max-width: 1534px)
+              font-size: 14px
+              line-height: 18px
           .desc
             display: flex
             flex-direction: column
@@ -43,25 +65,45 @@ section.contacts
               line-height: 22px
               color: #1b1b1b
               margin: 0 0 15px
+              @media (max-width: 1534px)
+                font-size: 14px
+                line-height: 18px
               &:last-child
                 margin-bottom: 0
             .phone-grid
               display: grid
               grid-template-columns: 1fr 1fr
               grid-auto-rows: auto
-              grid-column-gap: 35px
+              grid-column-gap: 15px
               grid-row-gap: 5px
+              @media (max-width: 1365px)
+                grid-template-columns: 1fr
+              @media (max-width: 920px)
+                grid-template-columns: 1fr 1fr
+              @media (max-width: 767px)
+                grid-template-columns: 1fr
               a
                 font-size: 18px
                 line-height: 22px
                 text-decoration: none
                 color: #1b1b1b
+                @media (max-width: 1534px)
+                  font-size: 14px
+                  line-height: 18px
     .map
       position: relative
       height: 100%
+      @media (max-width: 920px)
+        height: 400px
       iframe
         position: absolute
         top: 0
         left: 0
         width: calc(50vw - 87.5px)
         height: 100%
+        @media (max-width: 1719px)
+          width: calc(50vw - 40px)
+        @media (max-width: 1200px)
+          width: calc(60vw - 30px)
+        @media (max-width: 920px)
+          width: 100%

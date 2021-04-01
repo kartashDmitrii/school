@@ -8,8 +8,16 @@ section.about-company
     grid-auto-rows: auto
     align-items: center
     grid-gap: 90px
+    @media (max-width: 1365px)
+      grid-gap: 50px
+    @media (max-width: 1050px)
+      grid-template-columns: 1fr
     .image
       height: 430px
+      @media (max-width: 1680px)
+        height: 320px
+      @media (max-width: 1050px)
+        width: 100%
       &:after
         content: ''
         width: 170px
@@ -20,6 +28,10 @@ section.about-company
         background: url("../img/svg/figure.svg") center center / 100% 100% no-repeat
         transform: rotate(180deg)
         z-index: -1
+        @media (max-width: 1680px)
+          top: 120px
+        @media (max-width: 1365px)
+          left: 490px
       img
         position: absolute
         width: 975px
@@ -28,6 +40,17 @@ section.about-company
         left: 0
         border-radius: 0 500px 500px 0
         z-index: 1
+        @media (max-width: 1680px)
+          width: 720px
+          height: 320px
+        @media (max-width: 1365px)
+          width: 590px
+        @media (max-width: 1050px)
+          position: static
+          width: 100%
+          object-fit: cover
+        @media (max-width: 480px)
+          border-radius: 0 100px 100px 0
       &.reverse
         &:after
           left: auto
@@ -41,6 +64,8 @@ section.about-company
       flex-direction: column
       &:nth-child(2)
         margin-left: 108px
+        @media (max-width: 1050px)
+          margin-left: 0
       .title
         font-weight: 500
         font-size: 35px
@@ -63,6 +88,10 @@ section.about-company
     top: 377px
     left: 314px
     z-index: -1
+    @media (max-width: 1680px)
+      top: 250px
+    @media (max-width: 1365px)
+      left: 190px
     &.reverse
       left: auto
       right: 455px

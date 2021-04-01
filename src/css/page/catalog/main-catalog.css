@@ -5,10 +5,10 @@ section.main-catalog {
     position: static; }
   section.main-catalog:before {
     content: '';
-    height: calc(100% + 250px);
+    height: calc(100% + 280px);
     width: 100vw;
     position: absolute;
-    top: -250px;
+    top: -280px;
     left: 0;
     background: #917898;
     z-index: -1; }

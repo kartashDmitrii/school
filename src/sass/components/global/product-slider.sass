@@ -22,6 +22,11 @@ section.product-slider
       border-radius: 0
       margin-right: 20px
       outline: none
+      @media (max-width: 767px)
+        margin-right: 10px
+        width: 40px
+      @media (max-width: 480px)
+        display: none
       &:last-child
         margin-right: 0
       &.swiper-pagination-bullet-active
@@ -39,6 +44,8 @@ section.product-slider
     pointer-events: none
     display: flex
     justify-content: space-between
+    @media (max-width: 1060px)
+      display: none
     .arrow
       user-select: auto
       pointer-events: auto

@@ -8,8 +8,20 @@ section.about-company {
     grid-auto-rows: auto;
     align-items: center;
     grid-gap: 90px; }
+    @media (max-width: 1365px) {
+      section.about-company .container {
+        grid-gap: 50px; } }
+    @media (max-width: 1050px) {
+      section.about-company .container {
+        grid-template-columns: 1fr; } }
     section.about-company .container .image {
       height: 430px; }
+      @media (max-width: 1680px) {
+        section.about-company .container .image {
+          height: 320px; } }
+      @media (max-width: 1050px) {
+        section.about-company .container .image {
+          width: 100%; } }
       section.about-company .container .image:after {
         content: '';
         width: 170px;
@@ -20,6 +32,12 @@ section.about-company {
         background: url("../img/svg/figure.svg") center center/100% 100% no-repeat;
         transform: rotate(180deg);
         z-index: -1; }
+        @media (max-width: 1680px) {
+          section.about-company .container .image:after {
+            top: 120px; } }
+        @media (max-width: 1365px) {
+          section.about-company .container .image:after {
+            left: 490px; } }
       section.about-company .container .image img {
         position: absolute;
         width: 975px;
@@ -28,6 +46,21 @@ section.about-company {
         left: 0;
         border-radius: 0 500px 500px 0;
         z-index: 1; }
+        @media (max-width: 1680px) {
+          section.about-company .container .image img {
+            width: 720px;
+            height: 320px; } }
+        @media (max-width: 1365px) {
+          section.about-company .container .image img {
+            width: 590px; } }
+        @media (max-width: 1050px) {
+          section.about-company .container .image img {
+            position: static;
+            width: 100%;
+            object-fit: cover; } }
+        @media (max-width: 480px) {
+          section.about-company .container .image img {
+            border-radius: 0 100px 100px 0; } }
       section.about-company .container .image.reverse:after {
         left: auto;
         right: 775px; }
@@ -40,6 +73,9 @@ section.about-company {
       flex-direction: column; }
       section.about-company .container .text:nth-child(2) {
         margin-left: 108px; }
+        @media (max-width: 1050px) {
+          section.about-company .container .text:nth-child(2) {
+            margin-left: 0; } }
       section.about-company .container .text .title {
         font-weight: 500;
         font-size: 35px;
@@ -62,6 +98,12 @@ section.about-company {
     top: 377px;
     left: 314px;
     z-index: -1; }
+    @media (max-width: 1680px) {
+      section.about-company .dots-canvas {
+        top: 250px; } }
+    @media (max-width: 1365px) {
+      section.about-company .dots-canvas {
+        left: 190px; } }
     section.about-company .dots-canvas.reverse {
       left: auto;
       right: 455px; }

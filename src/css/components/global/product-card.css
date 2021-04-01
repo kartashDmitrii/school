@@ -55,7 +55,8 @@
       outline: none;
       cursor: pointer;
       padding: 10px;
-      min-width: 190px;
+      min-width: 120px;
+      margin-right: 15px;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -7,11 +7,15 @@ section.catalog
     align-items: flex-start
     justify-content: space-between
     margin-bottom: 15px
+    @media (max-width: 1365px)
+      flex-direction: column-reverse
     .left-side
       display: flex
       align-items: center
       flex-wrap: wrap
       margin-right: 20px
+      @media (max-width: 1365px)
+        margin-right: 0
       .filter
         display: flex
         align-items: center
@@ -56,6 +60,8 @@ section.catalog
     .right-side
       display: flex
       align-items: center
+      @media (max-width: 1365px)
+        margin-bottom: 15px
       label
         position: relative
         margin-right: 30px
@@ -140,6 +146,10 @@ section.catalog
     grid-column-gap: 30px
     grid-row-gap: 50px
     margin-bottom: 75px
+    @media (max-width: 1719px)
+      grid-column-gap: 20px
+    @media (max-width: 1365px)
+      grid-template-columns: 1fr 1fr
     &.row-grid
       grid-template-columns: 1fr
       grid-row-gap: 20px

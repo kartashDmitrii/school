@@ -15,6 +15,15 @@ section.top-catalog {
     display: grid;
     grid-template-columns: 395px calc(100% - 425px);
     justify-content: space-between; }
+    @media (max-width: 1365px) {
+      section.top-catalog .container {
+        grid-template-columns: 350px calc(100% - 380px); } }
+    @media (max-width: 1199px) {
+      section.top-catalog .container {
+        grid-template-columns: 300px calc(100% - 330px); } }
+    @media (max-width: 950px) {
+      section.top-catalog .container {
+        grid-template-columns: 1fr; } }
     section.top-catalog .container .catalog {
       display: flex;
       flex-direction: column;
@@ -24,6 +33,10 @@ section.top-catalog {
       padding: 12px 0 24px;
       width: 100%;
       position: relative; }
+      @media (max-width: 950px) {
+        section.top-catalog .container .catalog {
+          border: none;
+          padding: 0; } }
       section.top-catalog .container .catalog > p {
         font-size: 20px;
         line-height: 24px;
@@ -35,6 +48,15 @@ section.top-catalog {
         box-sizing: border-box;
         position: relative;
         border-bottom: 1px solid #ffffff; }
+        @media (max-width: 950px) {
+          section.top-catalog .container .catalog > p {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 2;
+            width: max-content;
+            margin: 0;
+            padding: 0 15px 2px 36px; } }
         section.top-catalog .container .catalog > p:before {
           content: '';
           width: 18px;
@@ -62,11 +84,64 @@ section.top-catalog {
         padding: 0;
         margin: 19px 0 0;
         box-sizing: border-box; }
+        @media (max-width: 950px) {
+          section.top-catalog .container .catalog > ul {
+            position: fixed;
+            top: 0;
+            left: -110%;
+            z-index: 11;
+            max-height: 100vh;
+            overflow-y: scroll;
+            background: #917898;
+            margin: 0;
+            width: 300px;
+            padding-top: 40px;
+            transition: left .3s; }
+            section.top-catalog .container .catalog > ul.active {
+              left: 0; } }
+        section.top-catalog .container .catalog > ul .close {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          width: 20px;
+          height: 20px;
+          display: none; }
+          @media (max-width: 950px) {
+            section.top-catalog .container .catalog > ul .close {
+              display: block; } }
+          section.top-catalog .container .catalog > ul .close:before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform: rotate(45deg);
+            background: #ffffff; }
+          section.top-catalog .container .catalog > ul .close:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform: rotate(-45deg);
+            background: #ffffff; }
         section.top-catalog .container .catalog > ul > li {
           font-size: 18px;
           line-height: 22px;
           margin: 0;
           width: 100%; }
+          @media (max-width: 1199px) {
+            section.top-catalog .container .catalog > ul > li {
+              font-size: 15px;
+              line-height: 20px; } }
           section.top-catalog .container .catalog > ul > li span {
             color: #ffffff;
             display: flex;
@@ -87,6 +162,10 @@ section.top-catalog {
             background: #FFC919; }
         section.top-catalog .container .catalog > ul li.active > ul {
           display: flex; }
+          @media (max-width: 950px) {
+            section.top-catalog .container .catalog > ul li.active > ul {
+              height: auto;
+              padding: 15px 0; } }
         section.top-catalog .container .catalog > ul ul {
           display: none;
           position: absolute;
@@ -104,6 +183,22 @@ section.top-catalog {
           border-radius: 10px;
           background: #917898;
           z-index: 2; }
+          @media (max-width: 1365px) {
+            section.top-catalog .container .catalog > ul ul {
+              max-width: 350px;
+              left: calc(100% + 10px); } }
+          @media (max-width: 1199px) {
+            section.top-catalog .container .catalog > ul ul {
+              max-width: 300px; } }
+          @media (max-width: 950px) {
+            section.top-catalog .container .catalog > ul ul {
+              left: 0;
+              position: static;
+              display: flex;
+              height: 0;
+              overflow: hidden;
+              padding: 0;
+              border: none; } }
           section.top-catalog .container .catalog > ul ul li span {
             padding-left: 30px;
             padding-right: 25px;
@@ -121,6 +216,19 @@ section.top-catalog {
       box-sizing: border-box;
       position: relative;
       z-index: 1; }
+      @media (max-width: 950px) {
+        section.top-catalog .container .image {
+          min-height: 500px; } }
+      @media (max-width: 767px) {
+        section.top-catalog .container .image {
+          min-height: 450px; } }
+      @media (max-width: 480px) {
+        section.top-catalog .container .image {
+          border-radius: 0 200px 200px 0;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-left: -15px;
+          width: calc(100% + 30px); } }
       section.top-catalog .container .image:before {
         content: '';
         width: 525px;
@@ -129,6 +237,10 @@ section.top-catalog {
         right: -46px;
         bottom: -40px;
         background: url("../img/svg/figure.svg") center center/100% 100% no-repeat; }
+        @media (max-width: 950px) {
+          section.top-catalog .container .image:before {
+            width: 260px;
+            height: 275px; } }
       section.top-catalog .container .image .title {
         font-weight: 600;
         font-size: 55px;
@@ -138,6 +250,10 @@ section.top-catalog {
         display: block;
         margin: 0 0 3px;
         font-family: "Exo2"; }
+        @media (max-width: 767px) {
+          section.top-catalog .container .image .title {
+            font-size: 38px;
+            line-height: 42px; } }
       section.top-catalog .container .image p {
         max-width: 510px;
         font-size: 20px;

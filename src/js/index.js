@@ -27,7 +27,6 @@ if (document.querySelector('*[data-popup]')) {
 
 if (document.querySelector('section.top-catalog')){
     function closeMenu(e){
-        console.log(e.target.closest('.catalog'));
         if (!e.target.closest('.catalog')){
             document.querySelectorAll('section.top-catalog .catalog .has-child.active').forEach( elem => {
                 elem.classList.remove('active')
@@ -46,7 +45,7 @@ if (document.querySelector('section.top-catalog')){
             } else {
                 window.addEventListener('click', closeMenu)
             }
-            elem.parentNode.classList.toggle('active')
+            elem.parentNode.classList.toggle('active');
         })
     });
     new Dots({
@@ -76,6 +75,24 @@ if (document.querySelector('section.product-slider')){
             navigation: {
                 nextEl: elem.querySelector('.arrow.next'),
                 prevEl: elem.querySelector('.arrow.prev')
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1
+                },
+                767: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                902: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                1365: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                }
             }
         });
     })
@@ -294,4 +311,45 @@ if (document.querySelector('section.news-page')){
             height: 105,
         })
     });
+}
+if (document.querySelector('header .burger') && window.screen.width < 992){
+    function closeBurger(e){
+        if (!e.target.closest('.phones') && !e.target.closest('nav') && !e.target.closest('.langs')) {
+            document.querySelector('header .phones').classList.remove('active');
+            document.querySelector('header nav').classList.remove('active');
+            document.querySelector('header .langs').classList.remove('active');
+            document.querySelector('header .phones .close').removeEventListener('mousedown', closeBurger);
+            window.removeEventListener('mousedown', closeBurger);
+        }
+    }
+    document.querySelector('header .burger').addEventListener('click', function () {
+        document.querySelector('header .phones').classList.add('active');
+        document.querySelector('header nav').classList.add('active');
+        document.querySelector('header .langs').classList.add('active');
+        document.querySelector('header .phones .close').addEventListener('mousedown', closeBurger);
+        window.addEventListener('mousedown', closeBurger);
+    })
+}
+
+if (document.querySelector('header .search') && window.screen.width < 768){
+    function closeSearch(e){
+        if (e.target.classList.contains('close-label')) {
+            document.querySelector('header .search label').classList.remove('active', 'close-label');
+            document.querySelector('header .search label').removeEventListener('click', closeSearch)
+        }
+    }
+    document.querySelector('header .search>a').addEventListener('click', function () {
+        document.querySelector('header .search label').classList.add('active', 'close-label');
+        document.querySelector('header .search label').addEventListener('click', closeSearch)
+    })
+}
+if (document.querySelector('section.top-catalog .catalog') && window.screen.width < 951){
+    function closeCatalog(){
+        document.querySelector('section.top-catalog .catalog>ul').classList.remove('active', 'close-label');
+        document.querySelector('section.top-catalog .catalog>ul .close').removeEventListener('click', closeCatalog)
+    }
+    document.querySelector('section.top-catalog .catalog>p').addEventListener('click', function () {
+        document.querySelector('section.top-catalog .catalog>ul').classList.add('active', 'close-label');
+        document.querySelector('section.top-catalog .catalog>ul .close').addEventListener('click', closeCatalog)
+    })
 }
