@@ -10,12 +10,24 @@ section.catalog {
     @media (max-width: 1365px) {
       section.catalog .catalog-buttons {
         flex-direction: column-reverse; } }
+    @media (max-width: 950px) {
+      section.catalog .catalog-buttons {
+        flex-direction: row; } }
+    @media (max-width: 767px) {
+      section.catalog .catalog-buttons {
+        flex-direction: column-reverse; } }
     section.catalog .catalog-buttons .left-side {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       margin-right: 20px; }
       @media (max-width: 1365px) {
+        section.catalog .catalog-buttons .left-side {
+          margin-right: 0; } }
+      @media (max-width: 950px) {
+        section.catalog .catalog-buttons .left-side {
+          margin-right: 20px; } }
+      @media (max-width: 767px) {
         section.catalog .catalog-buttons .left-side {
           margin-right: 0; } }
       section.catalog .catalog-buttons .left-side .filter {
@@ -65,9 +77,22 @@ section.catalog {
       @media (max-width: 1365px) {
         section.catalog .catalog-buttons .right-side {
           margin-bottom: 15px; } }
+      @media (max-width: 950px) {
+        section.catalog .catalog-buttons .right-side {
+          margin-bottom: 0; } }
+      @media (max-width: 767px) {
+        section.catalog .catalog-buttons .right-side {
+          margin-bottom: 15px; } }
+      @media (max-width: 380px) {
+        section.catalog .catalog-buttons .right-side {
+          flex-direction: column;
+          align-items: flex-start; } }
       section.catalog .catalog-buttons .right-side label {
         position: relative;
         margin-right: 30px; }
+        @media (max-width: 380px) {
+          section.catalog .catalog-buttons .right-side label {
+            margin-right: 0; } }
         section.catalog .catalog-buttons .right-side label select {
           padding: 8px 12px;
           font-size: 16px;
@@ -94,6 +119,9 @@ section.catalog {
     section.catalog .catalog-buttons .btns-view {
       display: flex;
       align-items: center; }
+      @media (max-width: 767px) {
+        section.catalog .catalog-buttons .btns-view {
+          display: none; } }
       section.catalog .catalog-buttons .btns-view button {
         width: 36px;
         height: 34px;
@@ -151,6 +179,9 @@ section.catalog {
     @media (max-width: 1365px) {
       section.catalog .product-grid {
         grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 690px) {
+      section.catalog .product-grid {
+        grid-template-columns: 1fr; } }
     section.catalog .product-grid.row-grid {
       grid-template-columns: 1fr;
       grid-row-gap: 20px; }
@@ -160,11 +191,19 @@ section.catalog {
         align-items: center;
         grid-gap: 5px;
         padding: 5px 10px; }
+        @media (max-width: 1365px) {
+          section.catalog .product-grid.row-grid .product-card {
+            grid-template-areas: 'image name btn' 'image code btn' 'image price btn'; } }
         section.catalog .product-grid.row-grid .product-card .image {
           grid-area: image;
           width: 200px;
           padding-bottom: 200px;
           margin-right: 40px; }
+          @media (max-width: 991px) {
+            section.catalog .product-grid.row-grid .product-card .image {
+              width: 150px;
+              padding-bottom: 150px;
+              margin-right: 20px; } }
         section.catalog .product-grid.row-grid .product-card .name {
           grid-area: name;
           margin: 0; }

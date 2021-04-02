@@ -11,19 +11,47 @@ section.product-info
   .flex
     display: flex
     align-items: flex-start
+    @media (max-width: 991px)
+      flex-direction: column
     .image
       display: flex
       width: 50%
       margin-right: 30px
+      @media (max-width: 1365px)
+        width: 60%
+      @media (max-width: 991px)
+        width: 100%
+        margin: 0 0 30px
       .image-gallery
         height: 620px
         width: 175px
         margin-right: 5px
+        @media (max-width: 1534px)
+          width: 120px
+          height: 560px
+        @media (max-width: 991px)
+          width: 160px
+        @media (max-width: 767px)
+          width: 110px
+          height: 420px
+        @media (max-width: 576px)
+          width: 100%
+          height: auto
         .swiper-container
           height: 100%
       .big-image
         width: calc(100% - 180px)
         height: 620px
+        @media (max-width: 1534px)
+          height: 560px
+          width: calc(100% - 125px)
+        @media (max-width: 991px)
+          width: calc(100% - 180px)
+        @media (max-width: 767px)
+          width: calc(100% - 120px)
+          height: 420px
+        @media (max-width: 576px)
+          display: none
         img
           object-fit: cover
           width: 100%
@@ -32,6 +60,10 @@ section.product-info
       width: calc(50% - 30px)
       display: flex
       flex-direction: column
+      @media (max-width: 1365px)
+        width: calc(40% - 30px)
+      @media (max-width: 991px)
+        width: 100%
       .name
         font-weight: 500
         font-size: 28px
@@ -85,11 +117,16 @@ section.product-info
         display: flex
         align-items: center
         margin-bottom: 20px
+        @media (max-width: 576px)
+          flex-direction: column
+          align-items: flex-start
         .price
           font-size: 28px
           line-height: 34px
           color: #1b1b1b
           margin: 0 100px 0 0
+          @media (max-width: 576px)
+            margin: 0 0 15px
         .count
           font-size: 18px
           line-height: 22px
@@ -100,6 +137,9 @@ section.product-info
         align-items: center
         justify-content: flex-start
         margin: 0
+        @media (max-width: 576px)
+          flex-direction: column
+          align-items: flex-start
         .buy
           background: #917898
           border-radius: 5px
@@ -116,6 +156,8 @@ section.product-info
           color: #ffffff
           text-decoration: none
           margin-right: 20px
+          @media (max-width: 576px)
+            margin: 0 0 15px
         .add-to-favorite
           text-decoration: none
           color: #286684

@@ -58,8 +58,40 @@ if (document.querySelector('section.top-catalog')){
 if (document.querySelector('section.product-slider')){
     document.querySelectorAll('section.product-slider').forEach( elem => {
         let slidesPerView = 4;
+        let breakpoints = {
+            0: {
+                slidesPerView: 1,
+                slidesPerGroup: 1
+            },
+            767: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+            },
+            902: {
+                slidesPerView: 3,
+                slidesPerGroup: 3
+            },
+            1365: {
+                slidesPerView: 4,
+                slidesPerGroup: 4
+            }
+        };
         if (elem.classList.contains('three-slides-per-view')){
             slidesPerView = 3;
+            breakpoints = {
+                0: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                1200: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                }
+            };
         }
         let block = elem.querySelector('.swiper-container');
         let swiper = new Swiper(block, {
@@ -76,24 +108,7 @@ if (document.querySelector('section.product-slider')){
                 nextEl: elem.querySelector('.arrow.next'),
                 prevEl: elem.querySelector('.arrow.prev')
             },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1
-                },
-                767: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2
-                },
-                902: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3
-                },
-                1365: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4
-                }
-            }
+            breakpoints: breakpoints
         });
     })
 }
@@ -204,17 +219,27 @@ if (document.querySelector('section.filter .filter-list.price')){
 }
 if (document.querySelector('section.product-info .image-gallery')){
     let swiper = new Swiper('section.product-info .image-gallery .swiper-container', {
-        direction: 'vertical',
-        slidesPerView: 4,
         spaceBetween: 20,
+        breakpoints: {
+            0: {
+                direction: 'horizontal',
+                slidesPerView: 1
+            },
+            577: {
+                direction: 'vertical',
+                slidesPerView: 4
+            }
+        }
     });
-    document.querySelectorAll('section.product-info .image-gallery .swiper-slide').forEach( elem => {
-        elem.querySelector('a').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('section.product-info .big-image img').src = elem.querySelector('img').src;
-            document.querySelector('section.product-info .big-image a').href = elem.querySelector('a').href;
+    if (window.screen.width > 576) {
+        document.querySelectorAll('section.product-info .image-gallery .swiper-slide').forEach(elem => {
+            elem.querySelector('a').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('section.product-info .big-image img').src = elem.querySelector('img').src;
+                document.querySelector('section.product-info .big-image a').href = elem.querySelector('a').href;
+            })
         })
-    })
+    }
 }
 if (document.querySelector('section.product-tabs')){
     document.querySelectorAll("section.product-tabs .tab-links li").forEach( (elem, i) => {
@@ -314,7 +339,7 @@ if (document.querySelector('section.news-page')){
 }
 if (document.querySelector('header .burger') && window.screen.width < 992){
     function closeBurger(e){
-        if (!e.target.closest('.phones') && !e.target.closest('nav') && !e.target.closest('.langs')) {
+        if (!e.target.closest('.phones') && !e.target.closest('nav') && !e.target.closest('.langs') || e.target.classList.contains('close')) {
             document.querySelector('header .phones').classList.remove('active');
             document.querySelector('header nav').classList.remove('active');
             document.querySelector('header .langs').classList.remove('active');
@@ -351,5 +376,42 @@ if (document.querySelector('section.top-catalog .catalog') && window.screen.widt
     document.querySelector('section.top-catalog .catalog>p').addEventListener('click', function () {
         document.querySelector('section.top-catalog .catalog>ul').classList.add('active', 'close-label');
         document.querySelector('section.top-catalog .catalog>ul .close').addEventListener('click', closeCatalog)
+    })
+}
+if (document.querySelector('section.filter') && window.screen.width < 951){
+    function closeFilter(e){
+        console.log(e.target.classList.contains('close'), e.target.closest('.filter'));
+        if (e.target.classList.contains('close') || !e.target.closest('.filter')) {
+            document.querySelector('section.filter').classList.remove('active', 'close-label');
+            if (window.screen.width < 577){
+                document.body.classList.remove('hidden');
+            }
+            window.removeEventListener('mousedown', closeFilter)
+        }
+    }
+    document.querySelector('section.description .filter-burger').addEventListener('click', function () {
+        document.querySelector('section.filter').classList.add('active', 'close-label');
+        if (window.screen.width < 577){
+            document.body.classList.add('hidden');
+        }
+        window.addEventListener('mousedown', closeFilter);
+    })
+}
+if (document.querySelector('section.user-info') && window.screen.width < 951){
+    function closeUser(e){
+        if (e.target.classList.contains('close') || !e.target.closest('.user-info')) {
+            document.querySelector('section.user-info').classList.remove('active');
+            if (window.screen.width < 768){
+                document.body.classList.remove('hidden');
+            }
+            window.removeEventListener('mousedown', closeUser)
+        }
+    }
+    document.querySelector('.user-burger').addEventListener('click', function () {
+        document.querySelector('section.user-info').classList.add('active');
+        if (window.screen.width < 768){
+            document.body.classList.add('hidden');
+        }
+        window.addEventListener('mousedown', closeUser);
     })
 }

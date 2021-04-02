@@ -1,9 +1,18 @@
+.user-burger
+  display: none
+  width: 30px
+  height: 30px
+  background: url("../img/svg/user.svg") center center / 100% 100% no-repeat
+  @media (max-width: 950px)
+    display: block
 section.my-orders
   display: flex
   flex-direction: column
   margin-top: 40px
   width: 100%
   margin-bottom: 115px
+  @media (max-width: 950px)
+    margin-top: 15px
   &>.name
     font-weight: 500
     font-size: 35px
@@ -32,6 +41,12 @@ section.my-orders
         position: relative
         cursor: pointer
         align-items: center
+        @media (max-width: 1365px)
+          padding: 12px 15px
+        @media (max-width: 767px)
+          grid-template-areas: 'status image image' 'status order sum' 'status status-name sum'
+        @media (max-width: 480px)
+          grid-template-areas: 'status image' 'order order' 'status-name status-name' 'sum sum'
         &:after
           content: ''
           width: 16px
@@ -43,6 +58,8 @@ section.my-orders
           margin: auto
           background: url("../img/svg/arrow-down.svg") center center / 100% 100% no-repeat
           transition: transform .3s
+          @media (max-width: 1365px)
+            right: 15px
         &:before
           content: ''
           width: calc(100% - 50px)
@@ -56,6 +73,8 @@ section.my-orders
           transition: height .3s
         &.active
           padding: 30px 35px 35px 40px
+          @media (max-width: 1365px)
+            padding: 20px 15px
           &:after
             transform: rotate(-180deg)
           &:before
@@ -68,6 +87,8 @@ section.my-orders
           height: 24px
           border-radius: 50%
           margin-right: 75px
+          @media (max-width: 1365px)
+            margin-right: 20px
           &.canceled
             background: #C4C4C4
           &.arrived
@@ -116,6 +137,10 @@ section.my-orders
           grid-area: image
           width: 110px
           height: 90px
+          @media (max-width: 767px)
+            width: 150px
+            height: 130px
+            justify-self: center
           img
             width: 100%
             height: 100%
@@ -130,9 +155,18 @@ section.my-orders
         transition: all .3s
         height: 0
         overflow: hidden
+        @media (max-width: 1549px)
+          grid-column-gap: 100px
+          grid-template-areas: 'characteristic' 'equip'
+          grid-template-columns: 1fr
+          grid-row-gap: 20px
         &.active
           margin-top: 45px
           padding: 0 140px 75px
+          @media (max-width: 1549px)
+            padding: 0 50px 55px
+          @media (max-width: 767px)
+            padding: 0 20px 20px
         .characteristic
           grid-area: characteristic
           display: flex
@@ -155,6 +189,8 @@ section.my-orders
               font-size: 18px
               line-height: 130%
               color: #000
+              flex-wrap: wrap
+              margin-bottom: 5px
               p
                 margin: 0
               .name

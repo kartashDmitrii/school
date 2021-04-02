@@ -11,19 +11,58 @@ section.product-info {
   section.product-info .flex {
     display: flex;
     align-items: flex-start; }
+    @media (max-width: 991px) {
+      section.product-info .flex {
+        flex-direction: column; } }
     section.product-info .flex .image {
       display: flex;
       width: 50%;
       margin-right: 30px; }
+      @media (max-width: 1365px) {
+        section.product-info .flex .image {
+          width: 60%; } }
+      @media (max-width: 991px) {
+        section.product-info .flex .image {
+          width: 100%;
+          margin: 0 0 30px; } }
       section.product-info .flex .image .image-gallery {
         height: 620px;
         width: 175px;
         margin-right: 5px; }
+        @media (max-width: 1534px) {
+          section.product-info .flex .image .image-gallery {
+            width: 120px;
+            height: 560px; } }
+        @media (max-width: 991px) {
+          section.product-info .flex .image .image-gallery {
+            width: 160px; } }
+        @media (max-width: 767px) {
+          section.product-info .flex .image .image-gallery {
+            width: 110px;
+            height: 420px; } }
+        @media (max-width: 576px) {
+          section.product-info .flex .image .image-gallery {
+            width: 100%;
+            height: auto; } }
         section.product-info .flex .image .image-gallery .swiper-container {
           height: 100%; }
       section.product-info .flex .image .big-image {
         width: calc(100% - 180px);
         height: 620px; }
+        @media (max-width: 1534px) {
+          section.product-info .flex .image .big-image {
+            height: 560px;
+            width: calc(100% - 125px); } }
+        @media (max-width: 991px) {
+          section.product-info .flex .image .big-image {
+            width: calc(100% - 180px); } }
+        @media (max-width: 767px) {
+          section.product-info .flex .image .big-image {
+            width: calc(100% - 120px);
+            height: 420px; } }
+        @media (max-width: 576px) {
+          section.product-info .flex .image .big-image {
+            display: none; } }
         section.product-info .flex .image .big-image img {
           object-fit: cover;
           width: 100%;
@@ -32,6 +71,12 @@ section.product-info {
       width: calc(50% - 30px);
       display: flex;
       flex-direction: column; }
+      @media (max-width: 1365px) {
+        section.product-info .flex .info {
+          width: calc(40% - 30px); } }
+      @media (max-width: 991px) {
+        section.product-info .flex .info {
+          width: 100%; } }
       section.product-info .flex .info .name {
         font-weight: 500;
         font-size: 28px;
@@ -85,11 +130,18 @@ section.product-info {
         display: flex;
         align-items: center;
         margin-bottom: 20px; }
+        @media (max-width: 576px) {
+          section.product-info .flex .info .price-block {
+            flex-direction: column;
+            align-items: flex-start; } }
         section.product-info .flex .info .price-block .price {
           font-size: 28px;
           line-height: 34px;
           color: #1b1b1b;
           margin: 0 100px 0 0; }
+          @media (max-width: 576px) {
+            section.product-info .flex .info .price-block .price {
+              margin: 0 0 15px; } }
         section.product-info .flex .info .price-block .count {
           font-size: 18px;
           line-height: 22px;
@@ -100,6 +152,10 @@ section.product-info {
         align-items: center;
         justify-content: flex-start;
         margin: 0; }
+        @media (max-width: 576px) {
+          section.product-info .flex .info .btns {
+            flex-direction: column;
+            align-items: flex-start; } }
         section.product-info .flex .info .btns .buy {
           background: #917898;
           border-radius: 5px;
@@ -116,6 +172,9 @@ section.product-info {
           color: #ffffff;
           text-decoration: none;
           margin-right: 20px; }
+          @media (max-width: 576px) {
+            section.product-info .flex .info .btns .buy {
+              margin: 0 0 15px; } }
         section.product-info .flex .info .btns .add-to-favorite {
           text-decoration: none;
           color: #286684;

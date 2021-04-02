@@ -3,6 +3,15 @@ section.cart-aside {
   flex-direction: column;
   width: 395px;
   margin-left: 30px; }
+  @media (max-width: 1535px) {
+    section.cart-aside {
+      margin-left: 20px;
+      width: 320px; } }
+  @media (max-width: 950px) {
+    section.cart-aside {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 20px; } }
   section.cart-aside .coupon {
     display: flex;
     flex-direction: column;
@@ -11,6 +20,9 @@ section.cart-aside {
     border-radius: 4px;
     padding: 28px 30px;
     width: 100%; }
+    @media (max-width: 480px) {
+      section.cart-aside .coupon {
+        padding: 14px 15px; } }
     section.cart-aside .coupon .top {
       display: flex;
       align-items: center;
@@ -21,6 +33,10 @@ section.cart-aside {
         line-height: 22px;
         color: #1b1b1b;
         margin: 0; }
+        @media (max-width: 480px) {
+          section.cart-aside .coupon .top > p {
+            font-size: 15px;
+            line-height: 18px; } }
       section.cart-aside .coupon .top .btn {
         border: none;
         outline: none;
@@ -31,6 +47,10 @@ section.cart-aside {
         line-height: 22px;
         color: #699eef;
         margin: 0; }
+        @media (max-width: 480px) {
+          section.cart-aside .coupon .top .btn {
+            font-size: 15px;
+            line-height: 18px; } }
     section.cart-aside .coupon .coupon-field {
       height: 0;
       transition: all .3s;
@@ -55,9 +75,15 @@ section.cart-aside {
         color: #ffffff;
         text-decoration: none;
         text-align: center; }
+        @media (max-width: 1549px) {
+          section.cart-aside .coupon .coupon-field .btn {
+            width: 75px; } }
       section.cart-aside .coupon .coupon-field label {
         width: calc(100% - 120px);
         display: flex; }
+        @media (max-width: 1549px) {
+          section.cart-aside .coupon .coupon-field label {
+            width: calc(100% - 85px); } }
         section.cart-aside .coupon .coupon-field label input {
           width: 100%;
           border: 1px solid #4D4D4D;
@@ -90,6 +116,10 @@ section.cart-aside {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px; }
+        @media (max-width: 480px) {
+          section.cart-aside .total-field ul li {
+            flex-direction: column;
+            align-items: flex-start; } }
         section.cart-aside .total-field ul li:last-child {
           margin-bottom: 0; }
         section.cart-aside .total-field ul li p {
@@ -99,6 +129,9 @@ section.cart-aside {
           line-height: 22px; }
         section.cart-aside .total-field ul li .name {
           color: #949494; }
+          @media (max-width: 480px) {
+            section.cart-aside .total-field ul li .name {
+              margin-bottom: 10px; } }
         section.cart-aside .total-field ul li .value {
           color: #1b1b1b; }
           section.cart-aside .total-field ul li .value span {
@@ -139,3 +172,6 @@ section.cart-aside {
       text-decoration: none;
       outline: none;
       margin: 0 0 15px; }
+      @media (max-width: 480px) {
+        section.cart-aside .total-field .confirm {
+          padding: 10px 5px; } }

@@ -12,12 +12,14 @@
 <body>
 @@include('./html-components/header.html')
 <main>
-    <div class="container flex-container">
-        <aside>
-            @@include('./html-components/personal-cabinet/user-info.html')
-        </aside>
-        <div class="small-container">
-            @@include('./html-components/personal-cabinet/my-orders.html')
+    <div class="container-fluid">
+        <div class="container flex-container">
+            <aside>
+                @@include('./html-components/personal-cabinet/user-info.html')
+            </aside>
+            <div class="small-container">
+                @@include('./html-components/personal-cabinet/my-orders.html')
+            </div>
         </div>
     </div>
     @@include('./html-components/global/product-slider.html', {

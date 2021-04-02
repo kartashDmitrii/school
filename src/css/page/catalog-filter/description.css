@@ -2,12 +2,18 @@ section.description {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px; }
+  @media (max-width: 950px) {
+    section.description {
+      position: relative; } }
   section.description .title {
     font-weight: 500;
     font-size: 35px;
     line-height: 43px;
     color: #1b1b1b;
     margin: 0 0 15px; }
+    @media (max-width: 950px) {
+      section.description .title {
+        margin-left: 40px; } }
   section.description .desc {
     display: flex;
     flex-direction: column; }
@@ -19,3 +25,16 @@ section.description {
       font-size: 16px;
       line-height: 23px;
       color: #1b1b1b; }
+  section.description .filter-burger {
+    width: 25px;
+    height: 25px;
+    mask: url("../img/svg/burger.svg") center center/100% 100% no-repeat;
+    background: #000;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 7px;
+    left: 0; }
+    @media (max-width: 950px) {
+      section.description .filter-burger {
+        display: block; } }

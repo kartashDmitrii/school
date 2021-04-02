@@ -284,6 +284,12 @@ img {
 
 .container.flex-container {
   display: flex; }
+  @media (max-width: 950px) {
+    .container.flex-container {
+      flex-direction: column-reverse; } }
+  @media (max-width: 767px) {
+    .container.flex-container {
+      position: static; } }
   .container.flex-container .filter {
     width: 395px;
     margin-right: 30px; }
@@ -296,6 +302,9 @@ img {
     @media (max-width: 1535px) {
       .container.flex-container .small-container {
         width: calc(100% - 340px); } }
+    @media (max-width: 950px) {
+      .container.flex-container .small-container {
+        width: 100%; } }
 
 section.wrapper {
   position: fixed;
@@ -323,6 +332,7 @@ section.wrapper {
     height: max-content;
     max-width: calc(100vw - 30px);
     max-height: 100vh;
+    overflow: auto;
     overflow-y: scroll;
     background: #ffffff;
     display: flex;
@@ -351,6 +361,10 @@ section.wrapper {
       width: 15.5px;
       height: 15.5px;
       cursor: pointer; }
+      @media (max-width: 576px) {
+        section.wrapper .popup > .close {
+          width: 12px;
+          height: 12px; } }
       section.wrapper .popup > .close:before {
         content: '';
         width: 24px;
@@ -363,6 +377,9 @@ section.wrapper {
         margin: auto;
         transform: rotate(45deg);
         background: #000; }
+        @media (max-width: 576px) {
+          section.wrapper .popup > .close:before {
+            width: 15px; } }
       section.wrapper .popup > .close:after {
         content: '';
         width: 24px;
@@ -375,6 +392,9 @@ section.wrapper {
         margin: auto;
         transform: rotate(-45deg);
         background: #000; }
+        @media (max-width: 576px) {
+          section.wrapper .popup > .close:after {
+            width: 15px; } }
 
 header {
   margin-top: 35px; }
@@ -523,7 +543,7 @@ header {
               width: 16px;
               height: 16px;
               background: url("../img/svg/arrow-down.svg") center center/100% 100% no-repeat;
-              z-index: 11; }
+              z-index: 1; }
               @media (max-width: 991px) {
                 header .container .content .top .phones .main-phone span {
                   right: 10px; } }

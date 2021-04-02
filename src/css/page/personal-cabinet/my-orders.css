@@ -1,9 +1,21 @@
+.user-burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url("../img/svg/user.svg") center center/100% 100% no-repeat; }
+  @media (max-width: 950px) {
+    .user-burger {
+      display: block; } }
+
 section.my-orders {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
   width: 100%;
   margin-bottom: 115px; }
+  @media (max-width: 950px) {
+    section.my-orders {
+      margin-top: 15px; } }
   section.my-orders > .name {
     font-weight: 500;
     font-size: 35px;
@@ -32,6 +44,15 @@ section.my-orders {
         position: relative;
         cursor: pointer;
         align-items: center; }
+        @media (max-width: 1365px) {
+          section.my-orders .order-list .order .top-block {
+            padding: 12px 15px; } }
+        @media (max-width: 767px) {
+          section.my-orders .order-list .order .top-block {
+            grid-template-areas: 'status image image' 'status order sum' 'status status-name sum'; } }
+        @media (max-width: 480px) {
+          section.my-orders .order-list .order .top-block {
+            grid-template-areas: 'status image' 'order order' 'status-name status-name' 'sum sum'; } }
         section.my-orders .order-list .order .top-block:after {
           content: '';
           width: 16px;
@@ -43,6 +64,9 @@ section.my-orders {
           margin: auto;
           background: url("../img/svg/arrow-down.svg") center center/100% 100% no-repeat;
           transition: transform .3s; }
+          @media (max-width: 1365px) {
+            section.my-orders .order-list .order .top-block:after {
+              right: 15px; } }
         section.my-orders .order-list .order .top-block:before {
           content: '';
           width: calc(100% - 50px);
@@ -56,6 +80,9 @@ section.my-orders {
           transition: height .3s; }
         section.my-orders .order-list .order .top-block.active {
           padding: 30px 35px 35px 40px; }
+          @media (max-width: 1365px) {
+            section.my-orders .order-list .order .top-block.active {
+              padding: 20px 15px; } }
           section.my-orders .order-list .order .top-block.active:after {
             transform: rotate(-180deg); }
           section.my-orders .order-list .order .top-block.active:before {
@@ -68,6 +95,9 @@ section.my-orders {
           height: 24px;
           border-radius: 50%;
           margin-right: 75px; }
+          @media (max-width: 1365px) {
+            section.my-orders .order-list .order .top-block .status {
+              margin-right: 20px; } }
           section.my-orders .order-list .order .top-block .status.canceled {
             background: #C4C4C4; }
           section.my-orders .order-list .order .top-block .status.arrived {
@@ -116,6 +146,11 @@ section.my-orders {
           grid-area: image;
           width: 110px;
           height: 90px; }
+          @media (max-width: 767px) {
+            section.my-orders .order-list .order .top-block .image {
+              width: 150px;
+              height: 130px;
+              justify-self: center; } }
           section.my-orders .order-list .order .top-block .image img {
             width: 100%;
             height: 100%;
@@ -130,9 +165,21 @@ section.my-orders {
         transition: all .3s;
         height: 0;
         overflow: hidden; }
+        @media (max-width: 1549px) {
+          section.my-orders .order-list .order .bottom-block {
+            grid-column-gap: 100px;
+            grid-template-areas: 'characteristic' 'equip';
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px; } }
         section.my-orders .order-list .order .bottom-block.active {
           margin-top: 45px;
           padding: 0 140px 75px; }
+          @media (max-width: 1549px) {
+            section.my-orders .order-list .order .bottom-block.active {
+              padding: 0 50px 55px; } }
+          @media (max-width: 767px) {
+            section.my-orders .order-list .order .bottom-block.active {
+              padding: 0 20px 20px; } }
         section.my-orders .order-list .order .bottom-block .characteristic {
           grid-area: characteristic;
           display: flex;
@@ -154,7 +201,9 @@ section.my-orders {
               align-items: center;
               font-size: 18px;
               line-height: 130%;
-              color: #000; }
+              color: #000;
+              flex-wrap: wrap;
+              margin-bottom: 5px; }
               section.my-orders .order-list .order .bottom-block .characteristic ul li p {
                 margin: 0; }
               section.my-orders .order-list .order .bottom-block .characteristic ul li .name {
